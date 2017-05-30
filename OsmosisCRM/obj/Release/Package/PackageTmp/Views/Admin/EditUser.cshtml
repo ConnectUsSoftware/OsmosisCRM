@@ -1,0 +1,220 @@
+﻿@{
+    ViewBag.Title = "EditUser";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<div ng-controller="UserCntrl" id="UserCntrl">
+    <div class="row bg-title">
+        <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
+            <h4 class="page-title">Edit User</h4>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="divUser" ng-init="GetUserdata()">
+            <form class="form-horizontal ng-pristine ng-valid" name="frmUser" id="frmUser" novalidate enctype="multipart/form-data">
+                <div class="panel panel-info block4" style="position: static; zoom: 1;">
+                    <div class="panel-heading">
+                        Edit User
+                        <div class="pull-right">
+                            <a href="#" data-perform="panel-collapse"><i class="ti-minus"></i></a>
+                        </div>
+                    </div>
+                    <div class="panel-wrapper collapse in" aria-expanded="true">
+                        <div class="panel-body">
+
+                            <div class="row">
+                                <div class="col-lg-6 form-group">
+                                    <label class="col-lg-4 control-label">Contact Name:</label>
+                                    <div class="col-lg-8" data-ng-class="{ 'has-error' : frmUser.contactname.$invalid && (frmUser.contactname.$dirty || Usersubmitted)}">
+                                        <input id="contactname" name="contactname" ng-model="objUser.contactname" class="form-control" placeholder="Contact Name" type="text" ng-required="true">
+                                        <p ng-show="frmUser.contactname.$error.required && (frmUser.contactname.$dirty || Usersubmitted)" class="help-block">Contact Name is required.</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6 form-group">
+                                    <label class="col-lg-3 control-label">Company Name:</label>
+                                    <div class="col-lg-9" data-ng-class="{ 'has-error' : frmUser.companyname.$invalid && (frmUser.companyname.$dirty || Usersubmitted)}">
+                                        <input id="companyname" name="companyname" ng-model="objUser.companyname" class="form-control" placeholder="Company Name" type="text" ng-required="true">
+                                        <p ng-show="frmUser.companyname.$error.required && (frmUser.companyname.$dirty || Usersubmitted)" class="help-block">Company Name is required.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6 form-group">
+                                    <label class="col-lg-4 control-label">Billing Address:</label>
+                                    <div class="col-lg-8" data-ng-class="{ 'has-error' : frmUser.billingaddress.$invalid && (frmUser.billingaddress.$dirty || Usersubmitted)}">
+                                        <textarea id="billingaddress" name="billingaddress" ng-model="objUser.billingaddress" class="form-control" placeholder="Billing Address" type="text" ng-required="true"></textarea>
+                                        <p ng-show="frmUser.billingaddress.$error.required && (frmUser.billingaddress.$dirty || Usersubmitted)" class="help-block">Billing Address is required.</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6 form-group">
+                                    <label class="col-lg-3 control-label">Install Address:</label>
+                                    <div class="col-lg-9" data-ng-class="{ 'has-error' : frmUser.installaddress.$invalid && (frmUser.installaddress.$dirty || Usersubmitted)}">
+                                        <textarea id="installaddress" name="installaddress" ng-model="objUser.installaddress" class="form-control" placeholder="Install Address" type="text" ng-required="true"></textarea>
+                                        <p ng-show="frmUser.installaddress.$error.required && (frmUser.installaddress.$dirty || Usersubmitted)" class="help-block">Install Address is required.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6 form-group">
+                                    <label class="col-lg-4 control-label">Machine Type:</label>
+                                    <div class="col-lg-8" data-ng-class="{ 'has-error' : frmUser.machinetype.$invalid && (frmUser.machinetype.$dirty || Usersubmitted)}">
+                                        <input id="machinetype" name="machinetype" ng-model="objUser.machinetype" class="form-control" placeholder="Machine Type" type="text" ng-required="true">
+                                        <p ng-show="frmUser.machinetype.$error.required && (frmUser.machinetype.$dirty || Usersubmitted)" class="help-block">Machine type is required.</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6 form-group">
+                                    <label class="col-lg-3 control-label">Contact No:</label>
+                                    <div class="col-lg-9" data-ng-class="{ 'has-error' : frmUser.contactno.$invalid && (frmUser.contactno.$dirty || Usersubmitted)}">
+                                        <input id="contactno" name="contactno" ng-model="objUser.contactno" class="form-control" placeholder="contactno" type="text" ng-required="true">
+                                        <p ng-show="frmUser.contactno.$error.required && (frmUser.contactno.$dirty || Usersubmitted)" class="help-block">Contact No is required.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-6 form-group">
+                                    <label class="col-lg-4 control-label">Mobile:</label>
+                                    <div class="col-lg-8" data-ng-class="{ 'has-error' : frmUser.mobile.$invalid && (frmUser.mobile.$dirty || Usersubmitted)}">
+                                        <input id="mobile" name="mobile" ng-model="objUser.mobile" class="form-control" placeholder="mobile" type="text" ng-required="true">
+                                        <p ng-show="frmUser.mobile.$error.required && (frmUser.mobile.$dirty || Usersubmitted)" class="help-block">Mobile is required.</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6 form-group">
+                                    <label class="col-lg-3 control-label">Email:</label>
+                                    <div class="col-lg-9" data-ng-class="{ 'has-error' : frmUser.email.$invalid && (frmUser.email.$dirty || Usersubmitted)}">
+                                        <input id="email" name="email" ng-model="objUser.email" class="form-control" placeholder="email" type="email" ng-required="true">
+                                        <p ng-show="frmUser.email.$error.required && (frmUser.email.$dirty || Usersubmitted)" class="help-block">Email is required.</p>
+                                        <p ng-show="frmUser.email.$error.email && (frmUser.email.$dirty || Contactsubmitted)" class="help-block">Please enter valid email id</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-6 form-group">
+                                    <label class="col-lg-4 control-label">Customer Type:</label>
+                                    <div class="col-lg-8" data-ng-class="{ 'has-error' : frmUser.customer_type.$invalid && (frmUser.customer_type.$dirty || Usersubmitted)}">
+                                        <select id="customer_type" name="customer_type" ng-model="objUser.customer_type" class="form-control" ng-required="true">
+                                            <option value="home">Home</option>
+                                            <option value="commerical">Commerical</option>
+                                        </select>
+                                        @*<input id="customer_type" name="customer_type" ng-model="objUser.customer_type" class="form-control" placeholder="Customer Type" type="text" ng-required="true">*@
+                                        <p ng-show="frmUser.customer_type.$error.required && (frmUser.customer_type.$dirty || Usersubmitted)" class="help-block">Customer Type is required.</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6 form-group">
+                                    <label class="col-lg-3 control-label">Payment Type:</label>
+                                    <div class="col-lg-9" data-ng-class="{ 'has-error' : frmUser.payment_type.$invalid && (frmUser.payment_type.$dirty || Usersubmitted)}">
+                                        <input id="payment_type" name="payment_type" ng-model="objUser.payment_type" class="form-control" placeholder="Payment Type" type="text" ng-required="true">
+                                        <p ng-show="frmUser.payment_type.$error.required && (frmUser.payment_type.$dirty || Usersubmitted)" class="help-block">Payment Type is required.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-6 form-group">
+                                    <label class="col-lg-4 control-label">Customer Code:</label>
+                                    <div class="col-lg-8" data-ng-class="{ 'has-error' : frmUser.customercode.$invalid && (frmUser.customercode.$dirty || Usersubmitted)}">
+                                        <input id="customercode" name="customercode" ng-model="objUser.customercode" class="form-control" placeholder="Customer Code" type="text" ng-required="true">
+                                        <p ng-show="frmUser.customercode.$error.required && (frmUser.customercode.$dirty || Usersubmitted)" class="help-block">Customer Code is required.</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6 form-group">
+                                    <label class="col-lg-3 control-label">Filter Change Time:</label>
+                                    <div class="col-lg-9" data-ng-class="{ 'has-error' : frmUser.filterchangetime.$invalid && (frmUser.filterchangetime.$dirty || Usersubmitted)}">
+                                        <input id="filterchangetime" name="filterchangetime" ng-model="objUser.filterchangetime" class="form-control" placeholder="Filter Change Time" type="text" ng-required="true">
+                                        <p ng-show="frmUser.filterchangetime.$error.required && (frmUser.filterchangetime.$dirty || Usersubmitted)" class="help-block">Filter Change Time is required.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-6 form-group">
+                                    <label class="col-lg-4 control-label">Filter Change Litre:</label>
+                                    <div class="col-lg-8" data-ng-class="{ 'has-error' : frmUser.filterchangelitre.$invalid && (frmUser.filterchangelitre.$dirty || Usersubmitted)}">
+                                        <input id="filterchangelitre" name="filterchangelitre" ng-model="objUser.filterchangelitre" class="form-control" placeholder="Filter Change Litre" type="text" ng-required="true">
+                                        <p ng-show="frmUser.filterchangelitre.$error.required && (frmUser.filterchangelitre.$dirty || Usersubmitted)" class="help-block">Filter Change Litre is required.</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6 form-group">
+                                    <label class="col-lg-3 control-label">Join Date:</label>
+                                    <div class="col-lg-9" data-ng-class="{ 'has-error' : frmUser.joindate.$invalid && (frmUser.joindate.$dirty || Usersubmitted)}">
+                                        <div class="input-group date" data-provide="datepicker" data-date-autoclose="true" data-date-format="dd/mm/yyyy">
+                                            <input type="text" class="form-control" id="joindate" name="joindate" ng-model="objUser.joindate" ng-required="true">
+                                            <div class="input-group-addon">
+                                                <span class="fa fa-calendar"></span>
+                                            </div>
+                                        </div>
+                                        <p ng-show="frmUser.joindate.$error.required && (frmUser.joindate.$dirty || Usersubmitted)" class="help-block">Join Date is required.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-6 form-group">
+                                    <label class="col-lg-4 control-label">Source:</label>
+                                    <div class="col-lg-8" data-ng-class="{ 'has-error' : frmUser.source.$invalid && (frmUser.source.$dirty || Usersubmitted)}">
+                                        <input id="source" name="source" ng-model="objUser.source" class="form-control" placeholder="Source" type="text">
+                                        <p ng-show="frmUser.source.$error.required && (frmUser.source.$dirty || Usersubmitted)" class="help-block">Source is required.</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6 form-group">
+                                    <label class="col-lg-3 control-label">Comment:</label>
+                                    <div class="col-lg-9" data-ng-class="{ 'has-error' : frmUser.comment.$invalid && (frmUser.comment.$dirty || Usersubmitted)}">
+                                        <input id="comment" name="comment" ng-model="objUser.comment" class="form-control" placeholder="Comment" type="text">
+                                        <p ng-show="frmUser.comment.$error.required && (frmUser.comment.$dirty || Usersubmitted)" class="help-block">Comment is required.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-12 form-group">
+                                    <label class="col-lg-2 control-label">&nbsp;</label>
+                                    <div class="col-lg-8">
+                                        <button class="btn btn-labeled btn-success" type="button" ng-click="SaveUser(objUser)">
+                                            <span class="btn-label">
+                                                <em class="fa fa-floppy-o"></em>
+                                            </span>
+                                            Save
+                                        </button>
+
+                                        <button class="btn btn-labeled btn-danger" type="button" ng-click="DeleteUser(objUser.cindex)">
+                                            <span class="btn-label">
+                                                <em class="fa fa-trash-o"></em>
+                                            </span>
+                                            Delete
+                                        </button>
+
+
+                                        <button class="btn btn-labeled btn-warning" type="button" ng-click="SendMail(objUser.cindex)">
+                                            <span class="btn-label">
+                                                <em class="fa fa-envelope"></em>
+                                            </span>
+                                            Send Invitation 
+                                        </button>
+
+                                        <button class="btn btn-labeled btn-info" type="button" ng-click="ClearUser()" href="javascript:void(0)">
+                                            <span class="btn-label">
+                                                <em class="fa fa-eraser"></em>
+                                            </span>
+                                            Reset
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+

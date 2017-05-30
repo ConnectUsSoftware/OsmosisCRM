@@ -1,0 +1,153 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" type="image/png" sizes="16x16" href="../plugins/images/favicon.png">
+    <title>Osmosis CRM</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- animation CSS -->
+    <link href="/css/animate.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="/css/style.css" rel="stylesheet">
+    <!-- color CSS -->
+    <link href="~/css/colors/blue.css" id="theme" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body ng-controller="LoginCntrl">
+    <style>
+        .login-sidebar {
+            overflow-y: scroll;
+        }
+    </style>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="cssload-speeding-wheel"></div>
+    </div>
+    <section id="wrapper" class="login-register" ng-init="GetRegisterDetails()">
+        <div class="login-box login-sidebar">
+            <div class="white-box">
+                <form class="form-horizontal form-material" id="loginform" name="loginform" novalidate enctype="multipart/form-data">
+                    <a href="javascript:void(0)" class="text-center db"><img src="/plugins/images/new_logo_vertical_whitebg.jpg" alt="Home" /><br /></a>
+                    <h3 class="box-title m-t-40 m-b-0">Register Now</h3><small>Create your account and enjoy</small>
+
+                    <div class="form-group m-t-20">
+                        <div class="col-xs-12" data-ng-class="{ 'has-error' : loginform.contactname.$invalid && (loginform.contactname.$dirty || Usersubmitted)}">
+                            <input id="customercode" name="customercode" ng-model="objUser.customercode" class="form-control" type="text" required="" placeholder="Customer Code" ng-blur="GetUserDetails()">
+                            <p ng-show="loginform.customercode.$error.required && (loginform.customercode.$dirty || Usersubmitted)" class="help-block">Customer Code is required.</p>
+                        </div>
+                    </div>
+                    <div class="form-group m-t-20">
+                        <div class="col-xs-12" data-ng-class="{ 'has-error' : loginform.invitationcode.$invalid && (loginform.invitationcode.$dirty || Usersubmitted)}">
+                            <input id="invitationcode" name="invitationcode" ng-model="objUser.invitationcode" class="form-control" type="text" required="" placeholder="Invitation Code" ng-blur="GetUserDetails()">
+                            <p ng-show="loginform.invitationcode.$error.required && (loginform.invitationcode.$dirty || Usersubmitted)" class="help-block">Invitation Code is required.</p>
+                        </div>
+                    </div>
+
+                    <div class="form-group m-t-20 has-error" ng-show="ShowLoader">
+                        <div class="col-xs-12">
+                            <img src="/plugins/images/busy.gif" />
+                        </div>
+                    </div>
+
+                    <div class="form-group m-t-20 has-error" ng-show="Invalid">
+                        <div class="col-xs-12">
+                            <p class="help-block">Invalid Customer Code or Invitation Code.</p>
+                        </div>
+                    </div>
+
+                    <div ng-show="UserEnterData">
+                        <div class="form-group m-t-20">
+                            <div class="col-xs-12" data-ng-class="{ 'has-error' : loginform.contactname.$invalid && (loginform.contactname.$dirty || Usersubmitted)}">
+                                <input id="contactname" name="contactname" ng-model="objUser.contactname" class="form-control" type="text" required="" placeholder="Name">
+                                <p ng-show="loginform.contactname.$error.required && (loginform.contactname.$dirty || Usersubmitted)" class="help-block">Contact Name is required.</p>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-xs-12" data-ng-class="{ 'has-error' : loginform.email.$invalid && (loginform.email.$dirty || Usersubmitted)}">
+                                <input id="email" name="email" ng-model="objUser.email" class="form-control" type="text" required="" placeholder="Email">
+                                <p ng-show="loginform.email.$error.required && (loginform.email.$dirty || Usersubmitted)" class="help-block">Email is required.</p>
+                            </div>
+                        </div>
+                        <div class="form-group ">
+                            <div class="col-xs-12" data-ng-class="{ 'has-error' : loginform.CustomerPassword.$invalid && (loginform.CustomerPassword.$dirty || Usersubmitted)}">
+                                <input id="CustomerPassword" name="CustomerPassword" ng-model="objUser.CustomerPassword" class="form-control" type="password" required="" placeholder="Password">
+                                <p ng-show="loginform.CustomerPassword.$error.required && (loginform.CustomerPassword.$dirty || Usersubmitted)" class="help-block">Password is required.</p>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-xs-12" data-ng-class="{ 'has-error' : loginform.ConfirmCustomerPassword.$invalid && (loginform.ConfirmCustomerPassword.$dirty || Usersubmitted)}">
+                                <input id="ConfirmCustomerPassword" name="ConfirmCustomerPassword" ng-model="objUser.ConfirmCustomerPassword" class="form-control" type="password" required="" placeholder="Confirm Password" ng-pattern="objUser.CustomerPassword">
+                                <p ng-show="loginform.ConfirmCustomerPassword.$error.required && (loginform.ConfirmCustomerPassword.$dirty || Usersubmitted)" class="help-block">Confirm Password is required.</p>
+                                <p ng-show="loginform.ConfirmCustomerPassword.$error.pattern" class="help-block">Confirm Password should have the same value with Password!</p>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-12">
+                                <div class="checkbox checkbox-primary p-t-0">
+                                    <input id="checkbox-signup" type="checkbox" ng-model="AcceptTerms">
+                                    <label for="checkbox-signup"> I agree to all <a href="#">Terms</a></label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group text-center m-t-20">
+                            <div class="col-xs-12">
+                                <button ng-disabled="!AcceptTerms" class="btn btn-info btn-lg btn-block text-uppercase waves-effect waves-light" type="button" ng-click="SignUp(objUser)">Sign Up</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="form-group m-b-0">
+                        <div class="col-sm-12 text-center">
+                            <p>Already have an account? <a href="/Account/Index" class="text-primary m-l-5"><b>Sign In</b></a></p>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- jQuery -->
+    <script src="/plugins/bower_components/jquery/jquery.min.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- Menu Plugin JavaScript -->
+    <script src="/plugins/bower_components/sidebar-nav/sidebar-nav.min.js"></script>
+
+    <!--slimscroll JavaScript -->
+    <script src="/js/jquery.slimscroll.js"></script>
+    <!--Wave Effects -->
+    <script src="/js/waves.js"></script>
+    <!-- Custom Theme JavaScript -->
+    <script src="/js/custom.min.js"></script>
+    <!--Style Switcher -->
+    <script src="/plugins/bower_components/styleswitcher/jQuery.style.switcher.js"></script>
+
+    <script src="/plugins/bower_components/sweetalert/sweetalert2.min.js"></script>
+    <link href="/plugins/bower_components/sweetalert/sweetalert2.min.css" rel="stylesheet" />
+
+    <!-- Include a polyfill for ES6 Promises (optional) for IE11 and Android browser -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/core-js/2.4.1/core.js"></script>
+
+    <script src="/Scripts/angular.min.js"></script>
+    <script src="/Scripts/angular-sanitize.min.js"></script>
+    <script src="/Angular/Module/app.js"></script>
+
+    <script src="/Angular/Controller/LoginCntrl.js"></script>
+    <script src="/Angular/Service/LoginService.js"></script>
+
+</body>
+</html>

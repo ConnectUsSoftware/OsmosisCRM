@@ -1,0 +1,1828 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>D:\Vipul\WorkingProjects\Membership\Publish</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="Angular/Controller/CaseCntrl.js">
+      <publishTime>05/27/2017 14:37:05</publishTime>
+    </File>
+    <File Include="Angular/Controller/LeadActionCntrl.js">
+      <publishTime>05/27/2017 17:58:28</publishTime>
+    </File>
+    <File Include="Angular/Controller/LeadCntrl.js">
+      <publishTime>05/27/2017 17:56:56</publishTime>
+    </File>
+    <File Include="Angular/Controller/LoginCntrl.js">
+      <publishTime>05/27/2017 16:17:15</publishTime>
+    </File>
+    <File Include="Angular/Controller/MachineCntrl.js">
+      <publishTime>05/27/2017 14:15:12</publishTime>
+    </File>
+    <File Include="Angular/Controller/MaintenanceCntrl.js">
+      <publishTime>05/27/2017 18:35:52</publishTime>
+    </File>
+    <File Include="Angular/Controller/UserCntrl.js">
+      <publishTime>05/27/2017 17:21:14</publishTime>
+    </File>
+    <File Include="Angular/Module/app.js">
+      <publishTime>05/24/2017 10:37:23</publishTime>
+    </File>
+    <File Include="Angular/Service/CaseService.js">
+      <publishTime>05/27/2017 14:32:36</publishTime>
+    </File>
+    <File Include="Angular/Service/LeadService.js">
+      <publishTime>05/27/2017 17:53:26</publishTime>
+    </File>
+    <File Include="Angular/Service/LoginService.js">
+      <publishTime>05/27/2017 16:15:09</publishTime>
+    </File>
+    <File Include="Angular/Service/MachineService.js">
+      <publishTime>05/27/2017 14:02:58</publishTime>
+    </File>
+    <File Include="Angular/Service/MaintenanceService.js">
+      <publishTime>05/27/2017 14:42:41</publishTime>
+    </File>
+    <File Include="Angular/Service/UserService.js">
+      <publishTime>05/27/2017 17:21:29</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/HelpPage.css">
+      <publishTime>05/23/2017 16:26:38</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/Api.cshtml">
+      <publishTime>05/23/2017 16:26:38</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/ApiGroup.cshtml">
+      <publishTime>05/23/2017 16:26:38</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/HelpPageApiModel.cshtml">
+      <publishTime>05/23/2017 16:26:38</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/ImageSample.cshtml">
+      <publishTime>05/23/2017 16:26:38</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/InvalidSample.cshtml">
+      <publishTime>05/23/2017 16:26:38</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/Parameters.cshtml">
+      <publishTime>05/23/2017 16:26:38</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/Samples.cshtml">
+      <publishTime>05/23/2017 16:26:38</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/TextSample.cshtml">
+      <publishTime>05/23/2017 16:26:38</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/Index.cshtml">
+      <publishTime>05/23/2017 16:26:38</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Shared/_Layout.cshtml">
+      <publishTime>05/23/2017 16:26:38</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Web.config">
+      <publishTime>05/23/2017 16:26:38</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/_ViewStart.cshtml">
+      <publishTime>05/23/2017 16:26:25</publishTime>
+    </File>
+    <File Include="bin/Antlr3.Runtime.dll">
+      <publishTime>05/23/2017 16:26:39</publishTime>
+    </File>
+    <File Include="bin/BusinessLayer.dll">
+      <publishTime>05/27/2017 18:42:49</publishTime>
+    </File>
+    <File Include="bin/DataLayer.dll">
+      <publishTime>05/27/2017 18:42:49</publishTime>
+    </File>
+    <File Include="bin/de/Microsoft.Data.Edm.resources.dll">
+      <publishTime>05/23/2017 16:26:36</publishTime>
+    </File>
+    <File Include="bin/de/Microsoft.Data.OData.resources.dll">
+      <publishTime>05/23/2017 16:26:37</publishTime>
+    </File>
+    <File Include="bin/de/System.Spatial.resources.dll">
+      <publishTime>05/23/2017 16:26:35</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.dll">
+      <publishTime>05/23/2017 17:58:38</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.SqlServer.dll">
+      <publishTime>05/23/2017 17:58:38</publishTime>
+    </File>
+    <File Include="bin/es/Microsoft.Data.Edm.resources.dll">
+      <publishTime>05/23/2017 16:26:36</publishTime>
+    </File>
+    <File Include="bin/es/Microsoft.Data.OData.resources.dll">
+      <publishTime>05/23/2017 16:26:37</publishTime>
+    </File>
+    <File Include="bin/es/System.Spatial.resources.dll">
+      <publishTime>05/23/2017 16:26:35</publishTime>
+    </File>
+    <File Include="bin/fr/Microsoft.Data.Edm.resources.dll">
+      <publishTime>05/23/2017 16:26:36</publishTime>
+    </File>
+    <File Include="bin/fr/Microsoft.Data.OData.resources.dll">
+      <publishTime>05/23/2017 16:26:37</publishTime>
+    </File>
+    <File Include="bin/fr/System.Spatial.resources.dll">
+      <publishTime>05/23/2017 16:26:35</publishTime>
+    </File>
+    <File Include="bin/it/Microsoft.Data.Edm.resources.dll">
+      <publishTime>05/23/2017 16:26:36</publishTime>
+    </File>
+    <File Include="bin/it/Microsoft.Data.OData.resources.dll">
+      <publishTime>05/23/2017 16:26:37</publishTime>
+    </File>
+    <File Include="bin/it/System.Spatial.resources.dll">
+      <publishTime>05/23/2017 16:26:35</publishTime>
+    </File>
+    <File Include="bin/ja/Microsoft.Data.Edm.resources.dll">
+      <publishTime>05/23/2017 16:26:36</publishTime>
+    </File>
+    <File Include="bin/ja/Microsoft.Data.OData.resources.dll">
+      <publishTime>05/23/2017 16:26:37</publishTime>
+    </File>
+    <File Include="bin/ja/System.Spatial.resources.dll">
+      <publishTime>05/23/2017 16:26:35</publishTime>
+    </File>
+    <File Include="bin/ko/Microsoft.Data.Edm.resources.dll">
+      <publishTime>05/23/2017 16:26:36</publishTime>
+    </File>
+    <File Include="bin/ko/Microsoft.Data.OData.resources.dll">
+      <publishTime>05/23/2017 16:26:37</publishTime>
+    </File>
+    <File Include="bin/ko/System.Spatial.resources.dll">
+      <publishTime>05/23/2017 16:26:35</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNet.Identity.Core.dll">
+      <publishTime>05/23/2017 17:58:01</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNet.Identity.EntityFramework.dll">
+      <publishTime>05/23/2017 17:58:43</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNet.Identity.Owin.dll">
+      <publishTime>05/23/2017 18:02:03</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Data.Edm.dll">
+      <publishTime>05/23/2017 16:26:36</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Data.OData.dll">
+      <publishTime>05/23/2017 16:26:37</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.dll">
+      <publishTime>05/23/2017 18:02:44</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Host.SystemWeb.dll">
+      <publishTime>05/23/2017 18:07:00</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.Cookies.dll">
+      <publishTime>05/23/2017 18:02:01</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.dll">
+      <publishTime>05/23/2017 18:02:01</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.OAuth.dll">
+      <publishTime>05/23/2017 18:02:02</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Infrastructure.dll">
+      <publishTime>05/23/2017 16:26:32</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Mvc.FixedDisplayModes.dll">
+      <publishTime>05/23/2017 16:26:33</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>05/23/2017 16:26:32</publishTime>
+    </File>
+    <File Include="bin/OsmosisCRM.dll">
+      <publishTime>05/27/2017 18:42:50</publishTime>
+    </File>
+    <File Include="bin/Owin.dll">
+      <publishTime>05/23/2017 18:01:59</publishTime>
+    </File>
+    <File Include="bin/ru/Microsoft.Data.Edm.resources.dll">
+      <publishTime>05/23/2017 16:26:36</publishTime>
+    </File>
+    <File Include="bin/ru/Microsoft.Data.OData.resources.dll">
+      <publishTime>05/23/2017 16:26:37</publishTime>
+    </File>
+    <File Include="bin/ru/System.Spatial.resources.dll">
+      <publishTime>05/23/2017 16:26:35</publishTime>
+    </File>
+    <File Include="bin/System.Net.Http.Formatting.dll">
+      <publishTime>05/23/2017 16:26:33</publishTime>
+    </File>
+    <File Include="bin/System.Spatial.dll">
+      <publishTime>05/23/2017 16:26:35</publishTime>
+    </File>
+    <File Include="bin/System.Web.Helpers.dll">
+      <publishTime>05/23/2017 16:26:32</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.dll">
+      <publishTime>05/23/2017 16:26:34</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.OData.dll">
+      <publishTime>05/23/2017 16:26:38</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.Tracing.dll">
+      <publishTime>05/23/2017 16:26:38</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.WebHost.dll">
+      <publishTime>05/23/2017 16:26:34</publishTime>
+    </File>
+    <File Include="bin/System.Web.Mvc.dll">
+      <publishTime>05/23/2017 16:26:33</publishTime>
+    </File>
+    <File Include="bin/System.Web.Optimization.dll">
+      <publishTime>05/23/2017 16:26:35</publishTime>
+    </File>
+    <File Include="bin/System.Web.Providers.dll">
+      <publishTime>05/23/2017 16:26:35</publishTime>
+    </File>
+    <File Include="bin/System.Web.Razor.dll">
+      <publishTime>05/23/2017 16:26:32</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Deployment.dll">
+      <publishTime>05/23/2017 16:26:32</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.dll">
+      <publishTime>05/23/2017 16:26:33</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Razor.dll">
+      <publishTime>05/23/2017 16:26:33</publishTime>
+    </File>
+    <File Include="bin/WebGrease.dll">
+      <publishTime>05/23/2017 16:26:39</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/Microsoft.Data.Edm.resources.dll">
+      <publishTime>05/23/2017 16:26:36</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/Microsoft.Data.OData.resources.dll">
+      <publishTime>05/23/2017 16:26:37</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/System.Spatial.resources.dll">
+      <publishTime>05/23/2017 16:26:35</publishTime>
+    </File>
+    <File Include="bin/zh-Hant/Microsoft.Data.Edm.resources.dll">
+      <publishTime>05/23/2017 16:26:36</publishTime>
+    </File>
+    <File Include="bin/zh-Hant/Microsoft.Data.OData.resources.dll">
+      <publishTime>05/23/2017 16:26:37</publishTime>
+    </File>
+    <File Include="bin/zh-Hant/System.Spatial.resources.dll">
+      <publishTime>05/23/2017 16:26:35</publishTime>
+    </File>
+    <File Include="bootstrap/dist/css/bootstrap.min.css">
+      <publishTime>05/26/2017 15:10:49</publishTime>
+    </File>
+    <File Include="bootstrap/dist/fonts/glyphicons-halflings-regular.eot">
+      <publishTime>05/26/2017 15:10:08</publishTime>
+    </File>
+    <File Include="bootstrap/dist/fonts/glyphicons-halflings-regular.svg">
+      <publishTime>05/26/2017 15:10:08</publishTime>
+    </File>
+    <File Include="bootstrap/dist/fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>05/26/2017 15:10:08</publishTime>
+    </File>
+    <File Include="bootstrap/dist/fonts/glyphicons-halflings-regular.woff">
+      <publishTime>05/26/2017 15:10:08</publishTime>
+    </File>
+    <File Include="bootstrap/dist/fonts/glyphicons-halflings-regular.woff2">
+      <publishTime>05/26/2017 15:10:08</publishTime>
+    </File>
+    <File Include="bootstrap/dist/js/bootstrap.min.js">
+      <publishTime>05/23/2017 16:34:39</publishTime>
+    </File>
+    <File Include="bootstrap/fonts/glyphicons-halflings-regular.eot">
+      <publishTime>05/26/2017 15:08:35</publishTime>
+    </File>
+    <File Include="bootstrap/fonts/glyphicons-halflings-regular.svg">
+      <publishTime>05/26/2017 15:08:35</publishTime>
+    </File>
+    <File Include="bootstrap/fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>05/26/2017 15:08:35</publishTime>
+    </File>
+    <File Include="bootstrap/fonts/glyphicons-halflings-regular.woff">
+      <publishTime>05/26/2017 15:08:35</publishTime>
+    </File>
+    <File Include="bootstrap/fonts/glyphicons-halflings-regular.woff2">
+      <publishTime>05/26/2017 15:08:35</publishTime>
+    </File>
+    <File Include="Content/bootstrap/alerts.less">
+      <publishTime>05/26/2017 14:23:41</publishTime>
+    </File>
+    <File Include="Content/bootstrap/badges.less">
+      <publishTime>05/26/2017 14:23:41</publishTime>
+    </File>
+    <File Include="Content/bootstrap/bootstrap.less">
+      <publishTime>05/26/2017 14:23:41</publishTime>
+    </File>
+    <File Include="Content/bootstrap/breadcrumbs.less">
+      <publishTime>05/26/2017 14:23:41</publishTime>
+    </File>
+    <File Include="Content/bootstrap/button-groups.less">
+      <publishTime>05/26/2017 14:23:41</publishTime>
+    </File>
+    <File Include="Content/bootstrap/buttons.less">
+      <publishTime>05/26/2017 14:23:41</publishTime>
+    </File>
+    <File Include="Content/bootstrap/carousel.less">
+      <publishTime>05/26/2017 14:23:41</publishTime>
+    </File>
+    <File Include="Content/bootstrap/close.less">
+      <publishTime>05/26/2017 14:23:41</publishTime>
+    </File>
+    <File Include="Content/bootstrap/code.less">
+      <publishTime>05/26/2017 14:23:41</publishTime>
+    </File>
+    <File Include="Content/bootstrap/component-animations.less">
+      <publishTime>05/26/2017 14:23:41</publishTime>
+    </File>
+    <File Include="Content/bootstrap/dropdowns.less">
+      <publishTime>05/26/2017 14:23:41</publishTime>
+    </File>
+    <File Include="Content/bootstrap/forms.less">
+      <publishTime>05/26/2017 14:23:41</publishTime>
+    </File>
+    <File Include="Content/bootstrap/glyphicons.less">
+      <publishTime>05/26/2017 14:23:41</publishTime>
+    </File>
+    <File Include="Content/bootstrap/grid.less">
+      <publishTime>05/26/2017 14:23:41</publishTime>
+    </File>
+    <File Include="Content/bootstrap/input-groups.less">
+      <publishTime>05/26/2017 14:23:41</publishTime>
+    </File>
+    <File Include="Content/bootstrap/jumbotron.less">
+      <publishTime>05/26/2017 14:23:41</publishTime>
+    </File>
+    <File Include="Content/bootstrap/labels.less">
+      <publishTime>05/26/2017 14:23:41</publishTime>
+    </File>
+    <File Include="Content/bootstrap/list-group.less">
+      <publishTime>05/26/2017 14:23:41</publishTime>
+    </File>
+    <File Include="Content/bootstrap/media.less">
+      <publishTime>05/26/2017 14:23:41</publishTime>
+    </File>
+    <File Include="Content/bootstrap/mixins.less">
+      <publishTime>05/26/2017 14:23:41</publishTime>
+    </File>
+    <File Include="Content/bootstrap/mixins/alerts.less">
+      <publishTime>05/26/2017 14:23:41</publishTime>
+    </File>
+    <File Include="Content/bootstrap/mixins/background-variant.less">
+      <publishTime>05/26/2017 14:23:41</publishTime>
+    </File>
+    <File Include="Content/bootstrap/mixins/border-radius.less">
+      <publishTime>05/26/2017 14:23:41</publishTime>
+    </File>
+    <File Include="Content/bootstrap/mixins/buttons.less">
+      <publishTime>05/26/2017 14:23:41</publishTime>
+    </File>
+    <File Include="Content/bootstrap/mixins/center-block.less">
+      <publishTime>05/26/2017 14:23:41</publishTime>
+    </File>
+    <File Include="Content/bootstrap/mixins/clearfix.less">
+      <publishTime>05/26/2017 14:23:41</publishTime>
+    </File>
+    <File Include="Content/bootstrap/mixins/forms.less">
+      <publishTime>05/26/2017 14:23:41</publishTime>
+    </File>
+    <File Include="Content/bootstrap/mixins/gradients.less">
+      <publishTime>05/26/2017 14:23:41</publishTime>
+    </File>
+    <File Include="Content/bootstrap/mixins/grid-framework.less">
+      <publishTime>05/26/2017 14:23:41</publishTime>
+    </File>
+    <File Include="Content/bootstrap/mixins/grid.less">
+      <publishTime>05/26/2017 14:23:41</publishTime>
+    </File>
+    <File Include="Content/bootstrap/mixins/hide-text.less">
+      <publishTime>05/26/2017 14:23:41</publishTime>
+    </File>
+    <File Include="Content/bootstrap/mixins/image.less">
+      <publishTime>05/26/2017 14:23:41</publishTime>
+    </File>
+    <File Include="Content/bootstrap/mixins/labels.less">
+      <publishTime>05/26/2017 14:23:41</publishTime>
+    </File>
+    <File Include="Content/bootstrap/mixins/list-group.less">
+      <publishTime>05/26/2017 14:23:41</publishTime>
+    </File>
+    <File Include="Content/bootstrap/mixins/nav-divider.less">
+      <publishTime>05/26/2017 14:23:41</publishTime>
+    </File>
+    <File Include="Content/bootstrap/mixins/nav-vertical-align.less">
+      <publishTime>05/26/2017 14:23:41</publishTime>
+    </File>
+    <File Include="Content/bootstrap/mixins/opacity.less">
+      <publishTime>05/26/2017 14:23:41</publishTime>
+    </File>
+    <File Include="Content/bootstrap/mixins/pagination.less">
+      <publishTime>05/26/2017 14:23:41</publishTime>
+    </File>
+    <File Include="Content/bootstrap/mixins/panels.less">
+      <publishTime>05/26/2017 14:23:41</publishTime>
+    </File>
+    <File Include="Content/bootstrap/mixins/progress-bar.less">
+      <publishTime>05/26/2017 14:23:41</publishTime>
+    </File>
+    <File Include="Content/bootstrap/mixins/reset-filter.less">
+      <publishTime>05/26/2017 14:23:41</publishTime>
+    </File>
+    <File Include="Content/bootstrap/mixins/reset-text.less">
+      <publishTime>05/26/2017 14:23:41</publishTime>
+    </File>
+    <File Include="Content/bootstrap/mixins/resize.less">
+      <publishTime>05/26/2017 14:23:41</publishTime>
+    </File>
+    <File Include="Content/bootstrap/mixins/responsive-visibility.less">
+      <publishTime>05/26/2017 14:23:41</publishTime>
+    </File>
+    <File Include="Content/bootstrap/mixins/size.less">
+      <publishTime>05/26/2017 14:23:41</publishTime>
+    </File>
+    <File Include="Content/bootstrap/mixins/tab-focus.less">
+      <publishTime>05/26/2017 14:23:41</publishTime>
+    </File>
+    <File Include="Content/bootstrap/mixins/table-row.less">
+      <publishTime>05/26/2017 14:23:41</publishTime>
+    </File>
+    <File Include="Content/bootstrap/mixins/text-emphasis.less">
+      <publishTime>05/26/2017 14:23:41</publishTime>
+    </File>
+    <File Include="Content/bootstrap/mixins/text-overflow.less">
+      <publishTime>05/26/2017 14:23:41</publishTime>
+    </File>
+    <File Include="Content/bootstrap/mixins/vendor-prefixes.less">
+      <publishTime>05/26/2017 14:23:41</publishTime>
+    </File>
+    <File Include="Content/bootstrap/modals.less">
+      <publishTime>05/26/2017 14:23:41</publishTime>
+    </File>
+    <File Include="Content/bootstrap/navbar.less">
+      <publishTime>05/26/2017 14:23:41</publishTime>
+    </File>
+    <File Include="Content/bootstrap/navs.less">
+      <publishTime>05/26/2017 14:23:41</publishTime>
+    </File>
+    <File Include="Content/bootstrap/normalize.less">
+      <publishTime>05/26/2017 14:23:41</publishTime>
+    </File>
+    <File Include="Content/bootstrap/pager.less">
+      <publishTime>05/26/2017 14:23:41</publishTime>
+    </File>
+    <File Include="Content/bootstrap/pagination.less">
+      <publishTime>05/26/2017 14:23:40</publishTime>
+    </File>
+    <File Include="Content/bootstrap/panels.less">
+      <publishTime>05/26/2017 14:23:40</publishTime>
+    </File>
+    <File Include="Content/bootstrap/popovers.less">
+      <publishTime>05/26/2017 14:23:40</publishTime>
+    </File>
+    <File Include="Content/bootstrap/print.less">
+      <publishTime>05/26/2017 14:23:40</publishTime>
+    </File>
+    <File Include="Content/bootstrap/progress-bars.less">
+      <publishTime>05/26/2017 14:23:40</publishTime>
+    </File>
+    <File Include="Content/bootstrap/responsive-embed.less">
+      <publishTime>05/26/2017 14:23:40</publishTime>
+    </File>
+    <File Include="Content/bootstrap/responsive-utilities.less">
+      <publishTime>05/26/2017 14:23:40</publishTime>
+    </File>
+    <File Include="Content/bootstrap/scaffolding.less">
+      <publishTime>05/26/2017 14:23:40</publishTime>
+    </File>
+    <File Include="Content/bootstrap/tables.less">
+      <publishTime>05/26/2017 14:23:40</publishTime>
+    </File>
+    <File Include="Content/bootstrap/theme.less">
+      <publishTime>05/26/2017 14:23:40</publishTime>
+    </File>
+    <File Include="Content/bootstrap/thumbnails.less">
+      <publishTime>05/26/2017 14:23:40</publishTime>
+    </File>
+    <File Include="Content/bootstrap/tooltip.less">
+      <publishTime>05/26/2017 14:23:40</publishTime>
+    </File>
+    <File Include="Content/bootstrap/type.less">
+      <publishTime>05/26/2017 14:23:40</publishTime>
+    </File>
+    <File Include="Content/bootstrap/utilities.less">
+      <publishTime>05/26/2017 14:23:40</publishTime>
+    </File>
+    <File Include="Content/bootstrap/variables.less">
+      <publishTime>05/26/2017 14:23:40</publishTime>
+    </File>
+    <File Include="Content/bootstrap/wells.less">
+      <publishTime>05/26/2017 14:23:40</publishTime>
+    </File>
+    <File Include="Content/fonts/glyphicons-halflings-regular.eot">
+      <publishTime>05/26/2017 14:23:40</publishTime>
+    </File>
+    <File Include="Content/fonts/glyphicons-halflings-regular.svg">
+      <publishTime>05/26/2017 14:23:40</publishTime>
+    </File>
+    <File Include="Content/fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>05/26/2017 14:23:40</publishTime>
+    </File>
+    <File Include="Content/fonts/glyphicons-halflings-regular.woff">
+      <publishTime>05/26/2017 14:23:40</publishTime>
+    </File>
+    <File Include="Content/fonts/glyphicons-halflings-regular.woff2">
+      <publishTime>05/26/2017 14:23:40</publishTime>
+    </File>
+    <File Include="Content/js/angular-sanitize.js">
+      <publishTime>05/23/2017 20:21:01</publishTime>
+    </File>
+    <File Include="Content/js/angular.js">
+      <publishTime>05/23/2017 20:21:02</publishTime>
+    </File>
+    <File Include="Content/Site.css">
+      <publishTime>05/23/2017 16:26:25</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-bg_flat_0_aaaaaa_40x100.png">
+      <publishTime>05/23/2017 16:26:31</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-bg_flat_75_ffffff_40x100.png">
+      <publishTime>05/23/2017 16:26:31</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-bg_glass_55_fbf9ee_1x400.png">
+      <publishTime>05/23/2017 16:26:31</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-bg_glass_65_ffffff_1x400.png">
+      <publishTime>05/23/2017 16:26:31</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-bg_glass_75_dadada_1x400.png">
+      <publishTime>05/23/2017 16:26:31</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-bg_glass_75_e6e6e6_1x400.png">
+      <publishTime>05/23/2017 16:26:31</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-bg_glass_95_fef1ec_1x400.png">
+      <publishTime>05/23/2017 16:26:31</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-bg_highlight-soft_75_cccccc_1x100.png">
+      <publishTime>05/23/2017 16:26:31</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-icons_222222_256x240.png">
+      <publishTime>05/23/2017 16:26:31</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-icons_2e83ff_256x240.png">
+      <publishTime>05/23/2017 16:26:31</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-icons_454545_256x240.png">
+      <publishTime>05/23/2017 16:26:31</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-icons_888888_256x240.png">
+      <publishTime>05/23/2017 16:26:31</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-icons_cd0a0a_256x240.png">
+      <publishTime>05/23/2017 16:26:31</publishTime>
+    </File>
+    <File Include="Content/themes/base/jquery-ui.css">
+      <publishTime>05/23/2017 16:26:31</publishTime>
+    </File>
+    <File Include="Content/themes/base/jquery.ui.accordion.css">
+      <publishTime>05/23/2017 16:26:31</publishTime>
+    </File>
+    <File Include="Content/themes/base/jquery.ui.all.css">
+      <publishTime>05/23/2017 16:26:31</publishTime>
+    </File>
+    <File Include="Content/themes/base/jquery.ui.autocomplete.css">
+      <publishTime>05/23/2017 16:26:31</publishTime>
+    </File>
+    <File Include="Content/themes/base/jquery.ui.base.css">
+      <publishTime>05/23/2017 16:26:31</publishTime>
+    </File>
+    <File Include="Content/themes/base/jquery.ui.button.css">
+      <publishTime>05/23/2017 16:26:31</publishTime>
+    </File>
+    <File Include="Content/themes/base/jquery.ui.core.css">
+      <publishTime>05/23/2017 16:26:31</publishTime>
+    </File>
+    <File Include="Content/themes/base/jquery.ui.datepicker.css">
+      <publishTime>05/23/2017 16:26:31</publishTime>
+    </File>
+    <File Include="Content/themes/base/jquery.ui.dialog.css">
+      <publishTime>05/23/2017 16:26:31</publishTime>
+    </File>
+    <File Include="Content/themes/base/jquery.ui.progressbar.css">
+      <publishTime>05/23/2017 16:26:31</publishTime>
+    </File>
+    <File Include="Content/themes/base/jquery.ui.resizable.css">
+      <publishTime>05/23/2017 16:26:31</publishTime>
+    </File>
+    <File Include="Content/themes/base/jquery.ui.selectable.css">
+      <publishTime>05/23/2017 16:26:31</publishTime>
+    </File>
+    <File Include="Content/themes/base/jquery.ui.slider.css">
+      <publishTime>05/23/2017 16:26:31</publishTime>
+    </File>
+    <File Include="Content/themes/base/jquery.ui.tabs.css">
+      <publishTime>05/23/2017 16:26:31</publishTime>
+    </File>
+    <File Include="Content/themes/base/jquery.ui.theme.css">
+      <publishTime>05/23/2017 16:26:31</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/images/ui-bg_flat_0_aaaaaa_40x100.png">
+      <publishTime>05/23/2017 16:26:31</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/images/ui-bg_flat_75_ffffff_40x100.png">
+      <publishTime>05/23/2017 16:26:31</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/images/ui-bg_glass_55_fbf9ee_1x400.png">
+      <publishTime>05/23/2017 16:26:31</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/images/ui-bg_glass_65_ffffff_1x400.png">
+      <publishTime>05/23/2017 16:26:31</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/images/ui-bg_glass_75_dadada_1x400.png">
+      <publishTime>05/23/2017 16:26:31</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/images/ui-bg_glass_75_e6e6e6_1x400.png">
+      <publishTime>05/23/2017 16:26:31</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/images/ui-bg_glass_95_fef1ec_1x400.png">
+      <publishTime>05/23/2017 16:26:31</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/images/ui-bg_highlight-soft_75_cccccc_1x100.png">
+      <publishTime>05/23/2017 16:26:31</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/images/ui-icons_222222_256x240.png">
+      <publishTime>05/23/2017 16:26:31</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/images/ui-icons_2e83ff_256x240.png">
+      <publishTime>05/23/2017 16:26:31</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/images/ui-icons_454545_256x240.png">
+      <publishTime>05/23/2017 16:26:31</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/images/ui-icons_888888_256x240.png">
+      <publishTime>05/23/2017 16:26:31</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/images/ui-icons_cd0a0a_256x240.png">
+      <publishTime>05/23/2017 16:26:31</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/jquery-ui.min.css">
+      <publishTime>05/23/2017 16:26:31</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/jquery.ui.accordion.min.css">
+      <publishTime>05/23/2017 16:26:31</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/jquery.ui.autocomplete.min.css">
+      <publishTime>05/23/2017 16:26:31</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/jquery.ui.button.min.css">
+      <publishTime>05/23/2017 16:26:31</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/jquery.ui.core.min.css">
+      <publishTime>05/23/2017 16:26:31</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/jquery.ui.datepicker.min.css">
+      <publishTime>05/23/2017 16:26:31</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/jquery.ui.dialog.min.css">
+      <publishTime>05/23/2017 16:26:31</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/jquery.ui.progressbar.min.css">
+      <publishTime>05/23/2017 16:26:31</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/jquery.ui.resizable.min.css">
+      <publishTime>05/23/2017 16:26:31</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/jquery.ui.selectable.min.css">
+      <publishTime>05/23/2017 16:26:31</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/jquery.ui.slider.min.css">
+      <publishTime>05/23/2017 16:26:31</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/jquery.ui.tabs.min.css">
+      <publishTime>05/23/2017 16:26:31</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/jquery.ui.theme.min.css">
+      <publishTime>05/23/2017 16:26:31</publishTime>
+    </File>
+    <File Include="css/animate.css">
+      <publishTime>05/23/2017 16:30:54</publishTime>
+    </File>
+    <File Include="css/colors/blue-dark.css">
+      <publishTime>05/23/2017 17:41:59</publishTime>
+    </File>
+    <File Include="css/colors/blue.css">
+      <publishTime>05/23/2017 17:41:59</publishTime>
+    </File>
+    <File Include="css/colors/default-dark.css">
+      <publishTime>05/23/2017 17:41:59</publishTime>
+    </File>
+    <File Include="css/colors/default.css">
+      <publishTime>05/23/2017 17:41:59</publishTime>
+    </File>
+    <File Include="css/colors/gray-dark.css">
+      <publishTime>05/23/2017 17:41:59</publishTime>
+    </File>
+    <File Include="css/colors/gray.css">
+      <publishTime>05/23/2017 17:41:59</publishTime>
+    </File>
+    <File Include="css/colors/green-dark.css">
+      <publishTime>05/23/2017 17:41:59</publishTime>
+    </File>
+    <File Include="css/colors/green.css">
+      <publishTime>05/23/2017 17:41:59</publishTime>
+    </File>
+    <File Include="css/colors/megna-dark.css">
+      <publishTime>05/23/2017 17:41:59</publishTime>
+    </File>
+    <File Include="css/colors/megna.css">
+      <publishTime>05/23/2017 17:41:59</publishTime>
+    </File>
+    <File Include="css/colors/purple-dark.css">
+      <publishTime>05/23/2017 17:41:59</publishTime>
+    </File>
+    <File Include="css/colors/purple.css">
+      <publishTime>05/23/2017 17:41:59</publishTime>
+    </File>
+    <File Include="css/colors/red-dark.css">
+      <publishTime>05/23/2017 17:41:59</publishTime>
+    </File>
+    <File Include="css/spinners.css">
+      <publishTime>05/23/2017 16:55:53</publishTime>
+    </File>
+    <File Include="css/style.css">
+      <publishTime>05/23/2017 16:58:28</publishTime>
+    </File>
+    <File Include="EmailTemplate/ConfirmUser.html">
+      <publishTime>05/26/2017 17:47:07</publishTime>
+    </File>
+    <File Include="EmailTemplate/subscriptionLink.html">
+      <publishTime>05/27/2017 16:29:28</publishTime>
+    </File>
+    <File Include="favicon.ico">
+      <publishTime>05/23/2017 16:26:25</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>05/23/2017 16:26:25</publishTime>
+    </File>
+    <File Include="Images/accent.png">
+      <publishTime>05/23/2017 16:26:25</publishTime>
+    </File>
+    <File Include="Images/bullet.png">
+      <publishTime>05/23/2017 16:26:25</publishTime>
+    </File>
+    <File Include="Images/heroAccent.png">
+      <publishTime>05/23/2017 16:26:25</publishTime>
+    </File>
+    <File Include="Images/loader.gif">
+      <publishTime>05/24/2017 14:01:35</publishTime>
+    </File>
+    <File Include="Images/orderedList0.png">
+      <publishTime>05/23/2017 16:26:25</publishTime>
+    </File>
+    <File Include="Images/orderedList1.png">
+      <publishTime>05/23/2017 16:26:25</publishTime>
+    </File>
+    <File Include="Images/orderedList2.png">
+      <publishTime>05/23/2017 16:26:25</publishTime>
+    </File>
+    <File Include="Images/orderedList3.png">
+      <publishTime>05/23/2017 16:26:25</publishTime>
+    </File>
+    <File Include="Images/orderedList4.png">
+      <publishTime>05/23/2017 16:26:25</publishTime>
+    </File>
+    <File Include="Images/orderedList5.png">
+      <publishTime>05/23/2017 16:26:25</publishTime>
+    </File>
+    <File Include="Images/orderedList6.png">
+      <publishTime>05/23/2017 16:26:25</publishTime>
+    </File>
+    <File Include="Images/orderedList7.png">
+      <publishTime>05/23/2017 16:26:25</publishTime>
+    </File>
+    <File Include="Images/orderedList8.png">
+      <publishTime>05/23/2017 16:26:25</publishTime>
+    </File>
+    <File Include="Images/orderedList9.png">
+      <publishTime>05/23/2017 16:26:25</publishTime>
+    </File>
+    <File Include="js/custom.min.js">
+      <publishTime>05/23/2017 16:38:32</publishTime>
+    </File>
+    <File Include="js/jquery.slimscroll.js">
+      <publishTime>05/23/2017 16:37:55</publishTime>
+    </File>
+    <File Include="js/waves.js">
+      <publishTime>05/23/2017 16:38:10</publishTime>
+    </File>
+    <File Include="less/colors/blue-dark.less">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/colors/blue.less">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/colors/default-dark.less">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/colors/default.less">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/colors/gray-dark.less">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/colors/gray.less">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/colors/green-dark.less">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/colors/green.less">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/colors/megna-dark.less">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/colors/megna.less">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/colors/purple-dark.less">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/colors/purple.less">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/colors/red-dark.less">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/common.less">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/font-awesome/.bower.json">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/font-awesome/.gitignore">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/font-awesome/.npmignore">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/font-awesome/bower.json">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/font-awesome/css/font-awesome.css">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/font-awesome/css/font-awesome.min.css">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/font-awesome/fonts/fontawesome-webfont-old.ttf">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/font-awesome/fonts/fontawesome-webfont.eot">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/font-awesome/fonts/fontawesome-webfont.svg">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/font-awesome/fonts/fontawesome-webfont.ttf">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/font-awesome/fonts/fontawesome-webfont.woff">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/font-awesome/fonts/fontawesome-webfont.woff2">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/font-awesome/fonts/FontAwesome.otf">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/font-awesome/HELP-US-OUT.txt">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/font-awesome/less/animated.less">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/font-awesome/less/bordered-pulled.less">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/font-awesome/less/core.less">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/font-awesome/less/extras.less">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/font-awesome/less/fixed-width.less">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/font-awesome/less/font-awesome.less">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/font-awesome/less/icons.less">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/font-awesome/less/larger.less">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/font-awesome/less/list.less">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/font-awesome/less/mixins.less">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/font-awesome/less/path.less">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/font-awesome/less/rotated-flipped.less">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/font-awesome/less/spinning.less">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/font-awesome/less/stacked.less">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/font-awesome/less/variables.less">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/font-awesome/scss/font-awesome.scss">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/font-awesome/scss/_animated.scss">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/font-awesome/scss/_bordered-pulled.scss">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/font-awesome/scss/_core.scss">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/font-awesome/scss/_extras.scss">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/font-awesome/scss/_fixed-width.scss">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/font-awesome/scss/_icons.scss">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/font-awesome/scss/_larger.scss">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/font-awesome/scss/_list.scss">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/font-awesome/scss/_mixins.scss">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/font-awesome/scss/_path.scss">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/font-awesome/scss/_rotated-flipped.scss">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/font-awesome/scss/_spinning.scss">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/font-awesome/scss/_stacked.scss">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/font-awesome/scss/_variables.scss">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/linea-icons/fonts/linea-arrows-10.eot">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/linea-icons/fonts/linea-arrows-10.svg">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/linea-icons/fonts/linea-arrows-10.ttf">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/linea-icons/fonts/linea-arrows-10.woff">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/linea-icons/fonts/linea-basic-10.eot">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/linea-icons/fonts/linea-basic-10.svg">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/linea-icons/fonts/linea-basic-10.ttf">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/linea-icons/fonts/linea-basic-10.woff">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/linea-icons/fonts/linea-basic-elaboration-10.eot">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/linea-icons/fonts/linea-basic-elaboration-10.svg">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/linea-icons/fonts/linea-basic-elaboration-10.ttf">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/linea-icons/fonts/linea-basic-elaboration-10.woff">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/linea-icons/fonts/linea-ecommerce-10.eot">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/linea-icons/fonts/linea-ecommerce-10.svg">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/linea-icons/fonts/linea-ecommerce-10.ttf">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/linea-icons/fonts/linea-ecommerce-10.woff">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/linea-icons/fonts/linea-music-10.eot">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/linea-icons/fonts/linea-music-10.svg">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/linea-icons/fonts/linea-music-10.ttf">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/linea-icons/fonts/linea-music-10.woff">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/linea-icons/fonts/linea-software-10.eot">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/linea-icons/fonts/linea-software-10.svg">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/linea-icons/fonts/linea-software-10.ttf">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/linea-icons/fonts/linea-software-10.woff">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/linea-icons/fonts/linea-weather-10.eot">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/linea-icons/fonts/linea-weather-10.svg">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/linea-icons/fonts/linea-weather-10.ttf">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/linea-icons/fonts/linea-weather-10.woff">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/linea-icons/linea.css">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/linea-icons/linea.less">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/material-design-iconic-font2/css/material-design-iconic-font.css">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/material-design-iconic-font2/css/material-design-iconic-font.min.css">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/material-design-iconic-font2/fonts/Material-Design-Iconic-Font.eot">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/material-design-iconic-font2/fonts/Material-Design-Iconic-Font.svg">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/material-design-iconic-font2/fonts/Material-Design-Iconic-Font.ttf">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/material-design-iconic-font2/fonts/Material-Design-Iconic-Font.woff">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/material-design-iconic-font2/fonts/Material-Design-Iconic-Font.woff2">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/simple-line-icons/css/simple-line-icons.css">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/simple-line-icons/fonts/Simple-Line-Icons.eot">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/simple-line-icons/fonts/Simple-Line-Icons.svg">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/simple-line-icons/fonts/Simple-Line-Icons.ttf">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/simple-line-icons/fonts/Simple-Line-Icons.woff">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/simple-line-icons/fonts/Simple-Line-Icons.woff2">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/simple-line-icons/less/simple-line-icons.less">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/simple-line-icons/scss/simple-line-icons.scss">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/themify-icons/fonts/themify.eot">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/themify-icons/fonts/themify.svg">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/themify-icons/fonts/themify.ttf">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/themify-icons/fonts/themify.woff">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/themify-icons/ie7/ie7.css">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/themify-icons/ie7/ie7.js">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/themify-icons/themify-icons.css">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/themify-icons/themify-icons.less">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/weather-icons/css/weather-icons-core.css">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/weather-icons/css/weather-icons-variables.css">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/weather-icons/css/weather-icons-wind.css">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/weather-icons/css/weather-icons-wind.min.css">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/weather-icons/css/weather-icons.css">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/weather-icons/css/weather-icons.min.css">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/weather-icons/font/weathericons-regular-webfont.eot">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/weather-icons/font/weathericons-regular-webfont.svg">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/weather-icons/font/weathericons-regular-webfont.ttf">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/weather-icons/font/weathericons-regular-webfont.woff">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/weather-icons/font/weathericons-regular-webfont.woff2">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/weather-icons/less/css/variables-beaufort.css">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/weather-icons/less/css/variables-day.css">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/weather-icons/less/css/variables-direction.css">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/weather-icons/less/css/variables-misc.css">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/weather-icons/less/css/variables-moon.css">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/weather-icons/less/css/variables-neutral.css">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/weather-icons/less/css/variables-night.css">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/weather-icons/less/css/variables-time.css">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/weather-icons/less/css/variables-wind-names.css">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/weather-icons/less/icon-classes/classes-beaufort.less">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/weather-icons/less/icon-classes/classes-day.less">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/weather-icons/less/icon-classes/classes-direction.less">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/weather-icons/less/icon-classes/classes-misc.less">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/weather-icons/less/icon-classes/classes-moon-aliases.less">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/weather-icons/less/icon-classes/classes-moon.less">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/weather-icons/less/icon-classes/classes-neutral.less">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/weather-icons/less/icon-classes/classes-night.less">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/weather-icons/less/icon-classes/classes-time.less">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/weather-icons/less/icon-classes/classes-wind-aliases.less">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/weather-icons/less/icon-classes/classes-wind-degrees.less">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/weather-icons/less/icon-classes/classes-wind.less">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/weather-icons/less/icon-variables/variables-beaufort.less">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/weather-icons/less/icon-variables/variables-day.less">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/weather-icons/less/icon-variables/variables-direction.less">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/weather-icons/less/icon-variables/variables-misc.less">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/weather-icons/less/icon-variables/variables-moon.less">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/weather-icons/less/icon-variables/variables-neutral.less">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/weather-icons/less/icon-variables/variables-night.less">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/weather-icons/less/icon-variables/variables-time.less">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/weather-icons/less/icon-variables/variables-wind-names.less">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/weather-icons/less/mappings/wi-forecast-io.less">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/weather-icons/less/mappings/wi-owm.less">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/weather-icons/less/mappings/wi-wmo4680.less">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/weather-icons/less/mappings/wi-yahoo.less">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/weather-icons/less/weather-icons-classes.less">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/weather-icons/less/weather-icons-core.less">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/weather-icons/less/weather-icons-variables.less">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/weather-icons/less/weather-icons-wind.less">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/weather-icons/less/weather-icons-wind.min.less">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/weather-icons/less/weather-icons.less">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/weather-icons/less/weather-icons.min.less">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/weather-icons/sass/icon-classes/classes-beaufort.scss">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/weather-icons/sass/icon-classes/classes-day.scss">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/weather-icons/sass/icon-classes/classes-direction.scss">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/weather-icons/sass/icon-classes/classes-misc.scss">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/weather-icons/sass/icon-classes/classes-moon-aliases.scss">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/weather-icons/sass/icon-classes/classes-moon.scss">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/weather-icons/sass/icon-classes/classes-neutral.scss">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/weather-icons/sass/icon-classes/classes-night.scss">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/weather-icons/sass/icon-classes/classes-time.scss">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/weather-icons/sass/icon-classes/classes-wind-aliases.scss">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/weather-icons/sass/icon-classes/classes-wind-degrees.scss">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/weather-icons/sass/icon-classes/classes-wind.scss">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/weather-icons/sass/icon-variables/variables-beaufort.scss">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/weather-icons/sass/icon-variables/variables-day.scss">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/weather-icons/sass/icon-variables/variables-direction.scss">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/weather-icons/sass/icon-variables/variables-misc.scss">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/weather-icons/sass/icon-variables/variables-moon.scss">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/weather-icons/sass/icon-variables/variables-neutral.scss">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/weather-icons/sass/icon-variables/variables-night.scss">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/weather-icons/sass/icon-variables/variables-time.scss">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/weather-icons/sass/icon-variables/variables-wind-names.scss">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/weather-icons/sass/mappings/wi-forecast-io.scss">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/weather-icons/sass/mappings/wi-owm.scss">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/weather-icons/sass/mappings/wi-wmo4680.scss">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/weather-icons/sass/mappings/wi-yahoo.scss">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/weather-icons/sass/weather-icons-classes.scss">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/weather-icons/sass/weather-icons-core.scss">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/weather-icons/sass/weather-icons-variables.scss">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/weather-icons/sass/weather-icons-wind.min.scss">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/weather-icons/sass/weather-icons-wind.scss">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/weather-icons/sass/weather-icons.min.scss">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/icons/weather-icons/sass/weather-icons.scss">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/pages.less">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/prepros.cfg">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/responsive.less">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/sidebar-nav.less">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/spinners.css">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/style.less">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/variables.less">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="less/widgets.less">
+      <publishTime>05/23/2017 16:57:18</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>05/26/2017 14:28:05</publishTime>
+    </File>
+    <File Include="plugins/bower_components/bootstrap-datetimepicker/css/bootstrap-datetimepicker-standalone.css">
+      <publishTime>05/26/2017 14:31:19</publishTime>
+    </File>
+    <File Include="plugins/bower_components/bootstrap-datetimepicker/css/bootstrap-datetimepicker.css">
+      <publishTime>05/27/2017 18:09:03</publishTime>
+    </File>
+    <File Include="plugins/bower_components/bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css">
+      <publishTime>05/26/2017 14:31:20</publishTime>
+    </File>
+    <File Include="plugins/bower_components/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js">
+      <publishTime>05/26/2017 14:31:20</publishTime>
+    </File>
+    <File Include="plugins/bower_components/datatables/datatables.all.min.js">
+      <publishTime>05/24/2017 11:08:27</publishTime>
+    </File>
+    <File Include="plugins/bower_components/datatables/datatables.css">
+      <publishTime>05/24/2017 11:08:27</publishTime>
+    </File>
+    <File Include="plugins/bower_components/datatables/datatables.js">
+      <publishTime>05/24/2017 11:08:27</publishTime>
+    </File>
+    <File Include="plugins/bower_components/datatables/datatables.min.css">
+      <publishTime>05/24/2017 11:08:27</publishTime>
+    </File>
+    <File Include="plugins/bower_components/datatables/datatables.min.js">
+      <publishTime>05/24/2017 11:08:28</publishTime>
+    </File>
+    <File Include="plugins/bower_components/datatables/dataTables.responsive.min.js">
+      <publishTime>05/27/2017 16:48:23</publishTime>
+    </File>
+    <File Include="plugins/bower_components/datatables/images/back_disabled.png">
+      <publishTime>05/24/2017 11:08:28</publishTime>
+    </File>
+    <File Include="plugins/bower_components/datatables/images/back_enabled.png">
+      <publishTime>05/24/2017 11:08:28</publishTime>
+    </File>
+    <File Include="plugins/bower_components/datatables/images/back_enabled_hover.png">
+      <publishTime>05/24/2017 11:08:28</publishTime>
+    </File>
+    <File Include="plugins/bower_components/datatables/images/favicon.ico">
+      <publishTime>05/24/2017 11:08:28</publishTime>
+    </File>
+    <File Include="plugins/bower_components/datatables/images/forward_disabled.png">
+      <publishTime>05/24/2017 11:08:28</publishTime>
+    </File>
+    <File Include="plugins/bower_components/datatables/images/forward_enabled.png">
+      <publishTime>05/24/2017 11:08:28</publishTime>
+    </File>
+    <File Include="plugins/bower_components/datatables/images/forward_enabled_hover.png">
+      <publishTime>05/24/2017 11:08:28</publishTime>
+    </File>
+    <File Include="plugins/bower_components/datatables/images/Sorting icons.psd">
+      <publishTime>05/24/2017 11:08:28</publishTime>
+    </File>
+    <File Include="plugins/bower_components/datatables/images/sort_asc.png">
+      <publishTime>05/24/2017 11:08:28</publishTime>
+    </File>
+    <File Include="plugins/bower_components/datatables/images/sort_asc_disabled.png">
+      <publishTime>05/24/2017 11:08:28</publishTime>
+    </File>
+    <File Include="plugins/bower_components/datatables/images/sort_both.png">
+      <publishTime>05/24/2017 11:08:28</publishTime>
+    </File>
+    <File Include="plugins/bower_components/datatables/images/sort_desc.png">
+      <publishTime>05/24/2017 11:08:28</publishTime>
+    </File>
+    <File Include="plugins/bower_components/datatables/images/sort_desc_disabled.png">
+      <publishTime>05/24/2017 11:08:28</publishTime>
+    </File>
+    <File Include="plugins/bower_components/datatables/plugins/bootstrap/datatables.bootstrap.css">
+      <publishTime>05/24/2017 11:08:28</publishTime>
+    </File>
+    <File Include="plugins/bower_components/datatables/plugins/bootstrap/datatables.bootstrap.js">
+      <publishTime>05/24/2017 11:08:28</publishTime>
+    </File>
+    <File Include="plugins/bower_components/datatables/responsive.dataTables.min.css">
+      <publishTime>05/27/2017 16:47:21</publishTime>
+    </File>
+    <File Include="plugins/bower_components/datatables/table-datatables-responsive.js">
+      <publishTime>05/27/2017 16:45:59</publishTime>
+    </File>
+    <File Include="plugins/bower_components/datepicker/bootstrap-datepicker.css">
+      <publishTime>05/27/2017 18:19:36</publishTime>
+    </File>
+    <File Include="plugins/bower_components/datepicker/bootstrap-datepicker.js">
+      <publishTime>05/24/2017 11:49:49</publishTime>
+    </File>
+    <File Include="plugins/bower_components/datepicker/bootstrap-timepicker.css">
+      <publishTime>05/27/2017 12:09:20</publishTime>
+    </File>
+    <File Include="plugins/bower_components/datepicker/bootstrap-timepicker.js">
+      <publishTime>05/27/2017 12:00:39</publishTime>
+    </File>
+    <File Include="plugins/bower_components/datepicker/moment.js">
+      <publishTime>05/27/2017 12:29:25</publishTime>
+    </File>
+    <File Include="plugins/bower_components/datepicker/xbootstrap-timepicker.css">
+      <publishTime>05/26/2017 14:55:49</publishTime>
+    </File>
+    <File Include="plugins/bower_components/datepicker/xxbootstrap-timepicker.css">
+      <publishTime>05/26/2017 15:14:16</publishTime>
+    </File>
+    <File Include="plugins/bower_components/jquery/jquery.min.js">
+      <publishTime>05/23/2017 16:33:53</publishTime>
+    </File>
+    <File Include="plugins/bower_components/sidebar-nav/sidebar-nav.min.js">
+      <publishTime>05/23/2017 16:37:02</publishTime>
+    </File>
+    <File Include="plugins/bower_components/styleswitcher/jQuery.style.switcher.js">
+      <publishTime>05/23/2017 16:47:26</publishTime>
+    </File>
+    <File Include="plugins/bower_components/sweetalert/sweetalert2.min.css">
+      <publishTime>05/24/2017 11:01:56</publishTime>
+    </File>
+    <File Include="plugins/bower_components/sweetalert/sweetalert2.min.js">
+      <publishTime>05/24/2017 11:01:34</publishTime>
+    </File>
+    <File Include="plugins/images/admin-logo-dark.png">
+      <publishTime>05/23/2017 17:34:23</publishTime>
+    </File>
+    <File Include="plugins/images/admin-logo.png">
+      <publishTime>05/23/2017 17:34:23</publishTime>
+    </File>
+    <File Include="plugins/images/admin-text-dark.png">
+      <publishTime>05/26/2017 17:31:11</publishTime>
+    </File>
+    <File Include="plugins/images/admin-text.png">
+      <publishTime>05/23/2017 17:34:23</publishTime>
+    </File>
+    <File Include="plugins/images/busy.gif">
+      <publishTime>05/27/2017 16:04:09</publishTime>
+    </File>
+    <File Include="plugins/images/favicon.png">
+      <publishTime>05/23/2017 17:27:42</publishTime>
+    </File>
+    <File Include="plugins/images/login-register.jpg">
+      <publishTime>05/23/2017 16:58:16</publishTime>
+    </File>
+    <File Include="plugins/images/new_logo_vertical_whitebg.jpg">
+      <publishTime>05/23/2017 16:32:52</publishTime>
+    </File>
+    <File Include="plugins/images/varun.jpg">
+      <publishTime>05/23/2017 17:39:04</publishTime>
+    </File>
+    <File Include="plugins/images/xadmin-text-dark.png">
+      <publishTime>05/23/2017 17:34:23</publishTime>
+    </File>
+    <File Include="Scripts/angular-animate.js">
+      <publishTime>05/24/2017 10:33:10</publishTime>
+    </File>
+    <File Include="Scripts/angular-animate.min.js">
+      <publishTime>05/24/2017 10:33:10</publishTime>
+    </File>
+    <File Include="Scripts/angular-animate.min.js.map">
+      <publishTime>05/24/2017 10:33:10</publishTime>
+    </File>
+    <File Include="Scripts/angular-aria.js">
+      <publishTime>05/24/2017 10:33:10</publishTime>
+    </File>
+    <File Include="Scripts/angular-aria.min.js">
+      <publishTime>05/24/2017 10:33:10</publishTime>
+    </File>
+    <File Include="Scripts/angular-aria.min.js.map">
+      <publishTime>05/24/2017 10:33:10</publishTime>
+    </File>
+    <File Include="Scripts/angular-cookies.js">
+      <publishTime>05/24/2017 10:33:10</publishTime>
+    </File>
+    <File Include="Scripts/angular-cookies.min.js">
+      <publishTime>05/24/2017 10:33:10</publishTime>
+    </File>
+    <File Include="Scripts/angular-cookies.min.js.map">
+      <publishTime>05/24/2017 10:33:10</publishTime>
+    </File>
+    <File Include="Scripts/angular-csp.css">
+      <publishTime>05/24/2017 10:33:10</publishTime>
+    </File>
+    <File Include="Scripts/angular-loader.js">
+      <publishTime>05/24/2017 10:33:10</publishTime>
+    </File>
+    <File Include="Scripts/angular-loader.min.js">
+      <publishTime>05/24/2017 10:33:10</publishTime>
+    </File>
+    <File Include="Scripts/angular-loader.min.js.map">
+      <publishTime>05/24/2017 10:33:10</publishTime>
+    </File>
+    <File Include="Scripts/angular-message-format.js">
+      <publishTime>05/24/2017 10:33:10</publishTime>
+    </File>
+    <File Include="Scripts/angular-message-format.min.js">
+      <publishTime>05/24/2017 10:33:10</publishTime>
+    </File>
+    <File Include="Scripts/angular-message-format.min.js.map">
+      <publishTime>05/24/2017 10:33:10</publishTime>
+    </File>
+    <File Include="Scripts/angular-messages.js">
+      <publishTime>05/24/2017 10:33:10</publishTime>
+    </File>
+    <File Include="Scripts/angular-messages.min.js">
+      <publishTime>05/24/2017 10:33:10</publishTime>
+    </File>
+    <File Include="Scripts/angular-messages.min.js.map">
+      <publishTime>05/24/2017 10:33:10</publishTime>
+    </File>
+    <File Include="Scripts/angular-mocks.js">
+      <publishTime>05/24/2017 10:33:10</publishTime>
+    </File>
+    <File Include="Scripts/angular-parse-ext.js">
+      <publishTime>05/24/2017 10:33:09</publishTime>
+    </File>
+    <File Include="Scripts/angular-parse-ext.min.js">
+      <publishTime>05/24/2017 10:33:09</publishTime>
+    </File>
+    <File Include="Scripts/angular-parse-ext.min.js.map">
+      <publishTime>05/24/2017 10:33:09</publishTime>
+    </File>
+    <File Include="Scripts/angular-resource.js">
+      <publishTime>05/24/2017 10:33:09</publishTime>
+    </File>
+    <File Include="Scripts/angular-resource.min.js">
+      <publishTime>05/24/2017 10:33:09</publishTime>
+    </File>
+    <File Include="Scripts/angular-resource.min.js.map">
+      <publishTime>05/24/2017 10:33:09</publishTime>
+    </File>
+    <File Include="Scripts/angular-route.js">
+      <publishTime>05/24/2017 10:33:09</publishTime>
+    </File>
+    <File Include="Scripts/angular-route.min.js">
+      <publishTime>05/24/2017 10:33:09</publishTime>
+    </File>
+    <File Include="Scripts/angular-route.min.js.map">
+      <publishTime>05/24/2017 10:33:09</publishTime>
+    </File>
+    <File Include="Scripts/angular-sanitize.js">
+      <publishTime>05/24/2017 10:33:09</publishTime>
+    </File>
+    <File Include="Scripts/angular-sanitize.min.js">
+      <publishTime>05/24/2017 10:33:09</publishTime>
+    </File>
+    <File Include="Scripts/angular-sanitize.min.js.map">
+      <publishTime>05/24/2017 10:33:09</publishTime>
+    </File>
+    <File Include="Scripts/angular-scenario.js">
+      <publishTime>05/24/2017 10:33:09</publishTime>
+    </File>
+    <File Include="Scripts/angular-touch.js">
+      <publishTime>05/24/2017 10:33:09</publishTime>
+    </File>
+    <File Include="Scripts/angular-touch.min.js">
+      <publishTime>05/24/2017 10:33:09</publishTime>
+    </File>
+    <File Include="Scripts/angular-touch.min.js.map">
+      <publishTime>05/24/2017 10:33:09</publishTime>
+    </File>
+    <File Include="Scripts/angular.js">
+      <publishTime>05/24/2017 10:33:09</publishTime>
+    </File>
+    <File Include="Scripts/angular.min.js">
+      <publishTime>05/24/2017 10:33:09</publishTime>
+    </File>
+    <File Include="Scripts/angular.min.js.map">
+      <publishTime>05/24/2017 10:33:09</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.js">
+      <publishTime>05/26/2017 14:23:40</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.min.js">
+      <publishTime>05/26/2017 14:23:40</publishTime>
+    </File>
+    <File Include="Scripts/errors.json">
+      <publishTime>05/24/2017 10:33:09</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.9.1.js">
+      <publishTime>05/26/2017 14:23:39</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.9.1.min.js">
+      <publishTime>05/26/2017 14:23:39</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.9.1.min.map">
+      <publishTime>05/26/2017 14:23:39</publishTime>
+    </File>
+    <File Include="Scripts/jquery-ui-1.8.24.js">
+      <publishTime>05/23/2017 16:26:31</publishTime>
+    </File>
+    <File Include="Scripts/jquery-ui-1.8.24.min.js">
+      <publishTime>05/23/2017 16:26:31</publishTime>
+    </File>
+    <File Include="Scripts/jquery.unobtrusive-ajax.js">
+      <publishTime>05/23/2017 16:26:31</publishTime>
+    </File>
+    <File Include="Scripts/jquery.unobtrusive-ajax.min.js">
+      <publishTime>05/23/2017 16:26:31</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.js">
+      <publishTime>05/23/2017 16:26:30</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.min.js">
+      <publishTime>05/23/2017 16:26:30</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.unobtrusive.js">
+      <publishTime>05/23/2017 16:26:31</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.unobtrusive.min.js">
+      <publishTime>05/23/2017 16:26:31</publishTime>
+    </File>
+    <File Include="Scripts/knockout-2.2.0.debug.js">
+      <publishTime>05/23/2017 16:26:39</publishTime>
+    </File>
+    <File Include="Scripts/knockout-2.2.0.js">
+      <publishTime>05/23/2017 16:26:39</publishTime>
+    </File>
+    <File Include="Scripts/modernizr-2.6.2.js">
+      <publishTime>05/23/2017 16:26:31</publishTime>
+    </File>
+    <File Include="Scripts/moment-with-locales.js">
+      <publishTime>05/26/2017 14:23:42</publishTime>
+    </File>
+    <File Include="Scripts/moment-with-locales.min.js">
+      <publishTime>05/26/2017 14:23:42</publishTime>
+    </File>
+    <File Include="Scripts/moment.js">
+      <publishTime>05/26/2017 14:23:42</publishTime>
+    </File>
+    <File Include="Scripts/moment.min.js">
+      <publishTime>05/26/2017 14:23:41</publishTime>
+    </File>
+    <File Include="Scripts/version.json">
+      <publishTime>05/24/2017 10:33:02</publishTime>
+    </File>
+    <File Include="Scripts/_references.js">
+      <publishTime>05/23/2017 16:26:31</publishTime>
+    </File>
+    <File Include="Views/Account/Index.cshtml">
+      <publishTime>05/27/2017 16:15:39</publishTime>
+    </File>
+    <File Include="Views/Account/Register.cshtml">
+      <publishTime>05/27/2017 16:15:44</publishTime>
+    </File>
+    <File Include="Views/Admin/CaseMaster.cshtml">
+      <publishTime>05/27/2017 14:43:33</publishTime>
+    </File>
+    <File Include="Views/Admin/EditUser.cshtml">
+      <publishTime>05/27/2017 17:22:19</publishTime>
+    </File>
+    <File Include="Views/Admin/Index.cshtml">
+      <publishTime>05/26/2017 17:37:34</publishTime>
+    </File>
+    <File Include="Views/Admin/LeadAction.cshtml">
+      <publishTime>05/27/2017 17:50:34</publishTime>
+    </File>
+    <File Include="Views/Admin/LeadMaster.cshtml">
+      <publishTime>05/27/2017 17:50:30</publishTime>
+    </File>
+    <File Include="Views/Admin/machineMaster.cshtml">
+      <publishTime>05/27/2017 14:02:57</publishTime>
+    </File>
+    <File Include="Views/Admin/maintenance.cshtml">
+      <publishTime>05/27/2017 18:37:36</publishTime>
+    </File>
+    <File Include="Views/Admin/UserMaster.cshtml">
+      <publishTime>05/27/2017 17:20:12</publishTime>
+    </File>
+    <File Include="Views/AdminUser/Index.cshtml">
+      <publishTime>05/25/2017 11:33:44</publishTime>
+    </File>
+    <File Include="Views/Home/Index.cshtml">
+      <publishTime>05/23/2017 17:46:04</publishTime>
+    </File>
+    <File Include="Views/Home/Register.cshtml">
+      <publishTime>05/24/2017 12:44:07</publishTime>
+    </File>
+    <File Include="Views/Shared/Error.cshtml">
+      <publishTime>05/23/2017 16:26:25</publishTime>
+    </File>
+    <File Include="Views/Shared/_Layout.cshtml">
+      <publishTime>05/27/2017 16:49:17</publishTime>
+    </File>
+    <File Include="Views/Shared/_UserLayout.cshtml">
+      <publishTime>05/26/2017 17:36:46</publishTime>
+    </File>
+    <File Include="Views/Web.config">
+      <publishTime>05/23/2017 16:26:25</publishTime>
+    </File>
+    <File Include="Views/_ViewStart.cshtml">
+      <publishTime>05/23/2017 16:26:25</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>05/27/2017 18:42:57</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

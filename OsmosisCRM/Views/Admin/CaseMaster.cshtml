@@ -1,0 +1,240 @@
+﻿@{
+    ViewBag.Title = "CaseMaster";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div ng-controller="CaseCntrl" id="CaseCntrl">
+    <div class="row bg-title">
+        <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
+            <h4 class="page-title">Case List</h4>
+        </div>
+    </div>
+    <div class="row">
+
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="divLead" ng-show="showAddLeadPanel">
+            <form class="form-horizontal ng-pristine ng-valid" name="fmcase" id="fmcase" novalidate enctype="multipart/form-data">
+                <div class="panel panel-info block4" style="position: static; zoom: 1;">
+                    <div class="panel-heading">
+                        Add/Edit Case
+                        <div class="pull-right">
+                            <a href="#" data-perform="panel-collapse"><i class="ti-minus"></i></a>
+                        </div>
+                    </div>
+                    <div class="panel-wrapper collapse in" aria-expanded="true">
+                        <div class="panel-body">
+
+                            <div class="row">
+                                <div class="col-lg-6 form-group">
+                                    <label class="col-lg-4 control-label">Customer code:</label>
+                                    <div class="col-lg-8" data-ng-class="{ 'has-error' : fmcase.customercode.$invalid && (fmcase.customercode.$dirty || Casesubmitted)}">
+                                        <input id="customercode" name="customercode" ng-model="objCase.customercode" class="form-control" placeholder="Customer code" type="text" ng-required="true">
+                                        <p ng-show="fmcase.customercode.$error.required && (fmcase.customercode.$dirty || Casesubmitted)" class="help-block">Customer code is required.</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6 form-group">
+                                    <label class="col-lg-4 control-label">Machine code:</label>
+                                    <div class="col-lg-8" data-ng-class="{ 'has-error' : fmcase.machinecode.$invalid && (fmcase.machinecode.$dirty || Casesubmitted)}">
+                                        <input id="machinecode" name="machinecode" ng-model="objCase.machinecode" class="form-control" placeholder="Machine code" type="text" ng-required="true">
+                                        <p ng-show="fmcase.machinecode.$error.required && (fmcase.machinecode.$dirty || Casesubmitted)" class="help-block">Machine code is required.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-6 form-group">
+                                    <label class="col-lg-4 control-label">Case Type:</label>
+                                    <div class="col-lg-8" data-ng-class="{ 'has-error' : fmcase.casetype.$invalid && (fmcase.casetype.$dirty || Casesubmitted)}">
+                                        <input id="casetype" name="casetype" ng-model="objCase.casetype" class="form-control" placeholder="Case Type" type="text" ng-required="true">
+                                        <p ng-show="fmcase.casetype.$error.required && (fmcase.casetype.$dirty || Casesubmitted)" class="help-block">Case type is required.</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6 form-group">
+                                    <label class="col-lg-4 control-label">Filter Pack:</label>
+                                    <div class="col-lg-8" data-ng-class="{ 'has-error' : fmcase.filterpack.$invalid && (fmcase.filterpack.$dirty || Casesubmitted)}">
+                                        <input id="filterpack" name="filterpack" ng-model="objCase.filterpack" class="form-control" placeholder="Filter Pack" type="text" ng-required="true">
+                                        <p ng-show="fmcase.filterpack.$error.required && (fmcase.filterpack.$dirty || Casesubmitted)" class="help-block">Filter Pack is required.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6 form-group">
+                                    <label class="col-lg-4 control-label">Schedule Date:</label>
+                                    <div class="col-lg-8" data-ng-class="{ 'has-error' : fmcase.scheduledate.$invalid && (fmcase.scheduledate.$dirty || Casesubmitted)}">
+                                        <div class="input-group date" data-provide="datepicker" data-date-autoclose="true" data-date-format="dd/mm/yyyy">
+                                            <input type="text" class="form-control" id="scheduledate" name="scheduledate" ng-model="objCase.scheduledate" ng-required="true">
+                                            <div class="input-group-addon">
+                                                <span class="fa fa-calendar"></span>
+                                            </div>
+                                        </div>
+                                        <p ng-show="fmcase.scheduledate.$error.required && (fmcase.scheduledate.$dirty || Casesubmitted)" class="help-block">Schedule Date is required.</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6 form-group">
+                                    <label class="col-lg-4 control-label">Time:</label>
+                                    <div class="col-lg-8" data-ng-class="{ 'has-error' : fmcase.time.$invalid && (fmcase.time.$dirty || Casesubmitted)}">
+                                        <div class="input-group bootstrap-timepicker timepicker">
+                                            <input id="time" name="time" ng-model="objCase.time" type="text" class="form-control input-small" ng-required="true">
+                                            <span class="input-group-addon"><i class="glyphicon glyphicon-time"></i></span>
+                                        </div>
+
+                                        @*<div class="input-group bootstrap-timepicker">
+                                            <input type="text" class="form-control" id="time" name="time" ng-model="objCase.time" ng-required="true">
+                                            <span class="input-group-addon"><i class="glyphicon glyphicon-time"></i></span>
+                                        </div>*@
+                                        <p ng-show="fmcase.time.$error.required && (fmcase.time.$dirty || Casesubmitted)" class="help-block">Time is required.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-6 form-group">
+                                    <label class="col-lg-4 control-label">Problem:</label>
+                                    <div class="col-lg-8">
+                                        <textarea id="problem" name="problem" ng-model="objCase.problem" class="form-control" placeholder="Problem" type="text"></textarea>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6 form-group">
+                                    <label class="col-lg-4 control-label">Suggest:</label>
+                                    <div class="col-lg-8">
+                                        <textarea id="suggest" name="suggest" ng-model="objCase.suggest" class="form-control" placeholder="Suggest" type="text"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+
+                                <div class="col-lg-6 form-group">
+                                    <label class="col-lg-4 control-label">Remarks:</label>
+                                    <div class="col-lg-8">
+                                        <textarea id="remarks" name="remarks" ng-model="objCase.remarks" class="form-control" placeholder="Remarks" type="text"></textarea>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6 form-group">
+                                    <label class="col-lg-4 control-label">Filter Text:</label>
+                                    <div class="col-lg-8">
+                                        <textarea id="filtertext" name="filtertext" ng-model="objCase.filtertext" class="form-control" placeholder="Filter Text" type="text"></textarea>
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-6 form-group">
+                                    <label class="col-lg-4 control-label">Completed:</label>
+                                    <div class="col-lg-8">
+                                        <select id="completed" name="completed" ng-model="objCase.completed" class="form-control">
+                                            <option value="yes">yes </option>
+                                            <option value="no">No</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6 form-group">
+                                    <label class="col-lg-4 control-label">Need to follow up?:</label>
+                                    <div class="col-lg-8">
+                                        <select id="followup" name="followup" ng-model="objCase.followup" class="form-control">
+                                            <option value="yes">yes </option>
+                                            <option value="no">No</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-6 form-group">
+                                    <label class="col-lg-4 control-label">Caste Text:</label>
+                                    <div class="col-lg-8">
+                                        <textarea id="castetext" name="castetext" ng-model="objCase.castetext" class="form-control" placeholder="Caste Text" type="text"></textarea>
+                                    </div>
+                                </div>
+
+                               
+                            </div>
+
+
+
+
+
+                            <div class="row">
+                                <div class="col-lg-6 form-group">
+                                    <label class="col-lg-4 control-label">&nbsp;</label>
+                                    <div class="col-lg-8">
+                                        <button class="btn btn-labeled btn-success" type="button" ng-click="SaveCase(objCase)">
+                                            <span class="btn-label">
+                                                <em class="fa fa-floppy-o"></em>
+                                            </span>
+                                            Save
+                                        </button>
+                                        <button class="btn btn-labeled btn-info" type="button" ng-click="ClearCase()" href="javascript:void(0)">
+                                            <span class="btn-label">
+                                                <em class="fa fa-eraser"></em>
+                                            </span>
+                                            Reset
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" ng-init="GetCaseList()">
+            <div class="panel panel-info block4" style="position: static; zoom: 1;">
+                <div class="panel-heading">
+                    Lead List
+                    <div class="pull-right">
+                        @*<a href="#" data-perform="panel-collapse"><i class="ti-minus"></i></a>*@
+                        <button type="button" ng-click="showAddLeadPanel=true;" class="btn btn-success">Add New </button>
+                    </div>
+                </div>
+                <div class="panel-wrapper collapse in" aria-expanded="true">
+                    <div class="panel-body">
+                        <table id="dtCaseList" class="display" cellspacing="0" width="100%">
+                            <thead>
+                                <tr>
+                                    <th>Customer Code</th>
+                                    <th>Machine Code</th>
+                                    <th>Case Type</th>
+                                    <th>Edit</th>
+                                    <th>Delete</th>
+                                </tr>
+                            </thead>
+                            <tfoot>
+                            </tfoot>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <hr>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+
+        //jQuery('.numbersOnly').keyup(function () {
+        //    this.value = this.value.replace(/[^0-9\.]/g, '');
+        //});
+
+        function EditCase(d) {
+            var scope = angular.element(document.getElementById("CaseCntrl")).scope();
+            scope.EditCase(d);
+        }
+
+        function DeleteCase(d) {
+            var scope = angular.element(document.getElementById("CaseCntrl")).scope();
+            scope.DeleteCase(d);
+        }
+
+    </script>
+</div>
+
+
+

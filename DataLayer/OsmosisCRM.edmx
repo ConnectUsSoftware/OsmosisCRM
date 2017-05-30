@@ -1,0 +1,372 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="OsmosisCRMModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="case">
+          <Key>
+            <PropertyRef Name="caseid" />
+          </Key>
+          <Property Name="caseid" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="customercode" Type="nvarchar" MaxLength="50" />
+          <Property Name="machinecode" Type="nvarchar" MaxLength="50" />
+          <Property Name="casetype" Type="nvarchar" MaxLength="50" />
+          <Property Name="filterpack" Type="nvarchar" MaxLength="500" />
+          <Property Name="scheduledate" Type="datetime" />
+          <Property Name="time" Type="datetime" />
+          <Property Name="problem" Type="nvarchar" MaxLength="500" />
+          <Property Name="suggest" Type="nvarchar" MaxLength="500" />
+          <Property Name="remarks" Type="nvarchar" MaxLength="500" />
+          <Property Name="completed" Type="nvarchar" MaxLength="50" />
+          <Property Name="followup" Type="nvarchar" MaxLength="50" />
+          <Property Name="castetext" Type="nvarchar" MaxLength="250" />
+          <Property Name="filtertext" Type="nvarchar" MaxLength="500" />
+        </EntityType>
+        <EntityType Name="customermain">
+          <Key>
+            <PropertyRef Name="cindex" />
+          </Key>
+          <Property Name="cindex" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="contactname" Type="nvarchar" MaxLength="250" Nullable="false" />
+          <Property Name="companyname" Type="nvarchar" MaxLength="250" />
+          <Property Name="billingaddress" Type="nvarchar" MaxLength="500" />
+          <Property Name="installaddress" Type="nvarchar" MaxLength="500" />
+          <Property Name="machinetype" Type="nvarchar" MaxLength="250" />
+          <Property Name="contactno" Type="nvarchar" MaxLength="250" />
+          <Property Name="mobile" Type="nvarchar" MaxLength="250" />
+          <Property Name="email" Type="nvarchar" MaxLength="250" />
+          <Property Name="customer_type" Type="nvarchar" MaxLength="250" />
+          <Property Name="payment_type" Type="nvarchar" MaxLength="250" />
+          <Property Name="customercode" Type="nvarchar" MaxLength="250" />
+          <Property Name="invitationcode" Type="nvarchar" MaxLength="250" />
+          <Property Name="filterchangetime" Type="nvarchar" MaxLength="250" />
+          <Property Name="filterchangelitre" Type="nvarchar" MaxLength="250" />
+          <Property Name="joindate" Type="datetime" />
+          <Property Name="source" Type="nvarchar" MaxLength="250" />
+          <Property Name="comment" Type="nvarchar" MaxLength="500" />
+          <Property Name="CustomerPassword" Type="nvarchar" MaxLength="50" />
+          <Property Name="IsConfirm" Type="bit" />
+        </EntityType>
+        <EntityType Name="lead">
+          <Key>
+            <PropertyRef Name="idlead" />
+          </Key>
+          <Property Name="idlead" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="contactname" Type="nvarchar" MaxLength="250" />
+          <Property Name="companyname" Type="nvarchar" MaxLength="250" />
+          <Property Name="contactno" Type="nvarchar" MaxLength="50" />
+          <Property Name="mobile" Type="nvarchar" MaxLength="50" />
+          <Property Name="email" Type="nvarchar" MaxLength="150" />
+          <Property Name="website" Type="nvarchar" MaxLength="150" />
+          <Property Name="address" Type="nvarchar" MaxLength="500" />
+          <Property Name="comment" Type="nvarchar" MaxLength="500" />
+          <Property Name="customertype" Type="nvarchar" MaxLength="50" />
+          <Property Name="leaddate" Type="datetime" />
+          <Property Name="model" Type="nvarchar" MaxLength="50" />
+          <Property Name="status" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="leadaction">
+          <Key>
+            <PropertyRef Name="leadactionid" />
+          </Key>
+          <Property Name="leadactionid" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="leadid" Type="int" />
+          <Property Name="actiontype" Type="nvarchar" MaxLength="50" />
+          <Property Name="memo" Type="nvarchar" MaxLength="500" />
+          <Property Name="nextdate" Type="datetime" />
+          <Property Name="createdate" Type="date" />
+        </EntityType>
+        <EntityType Name="machine">
+          <Key>
+            <PropertyRef Name="mid" />
+          </Key>
+          <Property Name="mid" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="machineid" Type="nvarchar" MaxLength="50" />
+          <Property Name="customercode" Type="nvarchar" MaxLength="50" />
+          <Property Name="customerindex" Type="int" />
+          <Property Name="installedaddress" Type="nvarchar" MaxLength="500" />
+          <Property Name="installdate" Type="datetime" />
+          <Property Name="nextdate" Type="datetime" />
+          <Property Name="photocode" Type="nvarchar" MaxLength="50" />
+          <Property Name="machinetype" Type="nvarchar" MaxLength="50" />
+          <Property Name="machinemodel" Type="nvarchar" MaxLength="50" />
+          <Property Name="mac" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="mainpack">
+          <Key>
+            <PropertyRef Name="mainid" />
+          </Key>
+          <Property Name="mainid" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="customercode" Type="nvarchar" MaxLength="50" />
+          <Property Name="maincheck" Type="nvarchar" MaxLength="50" />
+          <Property Name="havemain" Type="nvarchar" MaxLength="50" />
+          <Property Name="start" Type="datetime" />
+          <Property Name="end" Type="datetime" />
+          <Property Name="price" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="machineid" Type="nvarchar" MaxLength="50" />
+          <Property Name="remarks" Type="nvarchar" MaxLength="500" />
+        </EntityType>
+        <EntityContainer Name="OsmosisCRMModelStoreContainer">
+          <EntitySet Name="case" EntityType="Self.case" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="customermain" EntityType="Self.customermain" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="lead" EntityType="Self.lead" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="leadaction" EntityType="Self.leadaction" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="machine" EntityType="Self.machine" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="mainpack" EntityType="Self.mainpack" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="OsmosisCRMModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="OsmosisCRMEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="customermains" EntityType="OsmosisCRMModel.customermain" />
+          <EntitySet Name="leads" EntityType="OsmosisCRMModel.lead" />
+          <EntitySet Name="leadactions" EntityType="OsmosisCRMModel.leadaction" />
+          <EntitySet Name="cases" EntityType="OsmosisCRMModel.case" />
+          <EntitySet Name="machines" EntityType="OsmosisCRMModel.machine" />
+          <EntitySet Name="mainpacks" EntityType="OsmosisCRMModel.mainpack" />
+        </EntityContainer>
+        <EntityType Name="customermain">
+          <Key>
+            <PropertyRef Name="cindex" />
+          </Key>
+          <Property Name="cindex" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="contactname" Type="String" Nullable="false" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="companyname" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="billingaddress" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="installaddress" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="machinetype" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="contactno" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="mobile" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="email" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="customer_type" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="payment_type" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="customercode" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="invitationcode" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="filterchangetime" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="filterchangelitre" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="joindate" Type="DateTime" Precision="3" />
+          <Property Name="source" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="comment" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="CustomerPassword" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="IsConfirm" Type="Boolean" />
+        </EntityType>
+        <EntityType Name="lead">
+          <Key>
+            <PropertyRef Name="idlead" />
+          </Key>
+          <Property Name="idlead" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="contactname" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="companyname" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="contactno" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="mobile" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="email" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="website" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="address" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="comment" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="customertype" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="leaddate" Type="DateTime" Precision="3" />
+          <Property Name="model" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="status" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="leadaction">
+          <Key>
+            <PropertyRef Name="leadactionid" />
+          </Key>
+          <Property Name="leadactionid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="leadid" Type="Int32" />
+          <Property Name="actiontype" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="memo" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="nextdate" Type="DateTime" Precision="3" />
+          <Property Name="createdate" Type="DateTime" Precision="0" />
+        </EntityType>
+        <EntityType Name="case">
+          <Key>
+            <PropertyRef Name="caseid" />
+          </Key>
+          <Property Name="caseid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="customercode" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="machinecode" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="casetype" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="filterpack" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="scheduledate" Type="DateTime" Precision="3" />
+          <Property Name="time" Type="DateTime" Precision="3" />
+          <Property Name="problem" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="suggest" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="remarks" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="completed" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="followup" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="castetext" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="filtertext" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="machine">
+          <Key>
+            <PropertyRef Name="mid" />
+          </Key>
+          <Property Name="mid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="machineid" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="customercode" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="customerindex" Type="Int32" />
+          <Property Name="installedaddress" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="installdate" Type="DateTime" Precision="3" />
+          <Property Name="nextdate" Type="DateTime" Precision="3" />
+          <Property Name="photocode" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="machinetype" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="machinemodel" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="mac" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="mainpack">
+          <Key>
+            <PropertyRef Name="mainid" />
+          </Key>
+          <Property Name="mainid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="customercode" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="maincheck" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="havemain" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="start" Type="DateTime" Precision="3" />
+          <Property Name="end" Type="DateTime" Precision="3" />
+          <Property Name="price" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="machineid" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="remarks" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="OsmosisCRMModelStoreContainer" CdmEntityContainer="OsmosisCRMEntities">
+          <EntitySetMapping Name="customermains">
+            <EntityTypeMapping TypeName="OsmosisCRMModel.customermain">
+              <MappingFragment StoreEntitySet="customermain">
+                <ScalarProperty Name="IsConfirm" ColumnName="IsConfirm" />
+                <ScalarProperty Name="CustomerPassword" ColumnName="CustomerPassword" />
+                <ScalarProperty Name="comment" ColumnName="comment" />
+                <ScalarProperty Name="source" ColumnName="source" />
+                <ScalarProperty Name="joindate" ColumnName="joindate" />
+                <ScalarProperty Name="filterchangelitre" ColumnName="filterchangelitre" />
+                <ScalarProperty Name="filterchangetime" ColumnName="filterchangetime" />
+                <ScalarProperty Name="invitationcode" ColumnName="invitationcode" />
+                <ScalarProperty Name="customercode" ColumnName="customercode" />
+                <ScalarProperty Name="payment_type" ColumnName="payment_type" />
+                <ScalarProperty Name="customer_type" ColumnName="customer_type" />
+                <ScalarProperty Name="email" ColumnName="email" />
+                <ScalarProperty Name="mobile" ColumnName="mobile" />
+                <ScalarProperty Name="contactno" ColumnName="contactno" />
+                <ScalarProperty Name="machinetype" ColumnName="machinetype" />
+                <ScalarProperty Name="installaddress" ColumnName="installaddress" />
+                <ScalarProperty Name="billingaddress" ColumnName="billingaddress" />
+                <ScalarProperty Name="companyname" ColumnName="companyname" />
+                <ScalarProperty Name="contactname" ColumnName="contactname" />
+                <ScalarProperty Name="cindex" ColumnName="cindex" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="leads">
+            <EntityTypeMapping TypeName="OsmosisCRMModel.lead">
+              <MappingFragment StoreEntitySet="lead">
+                <ScalarProperty Name="status" ColumnName="status" />
+                <ScalarProperty Name="model" ColumnName="model" />
+                <ScalarProperty Name="leaddate" ColumnName="leaddate" />
+                <ScalarProperty Name="customertype" ColumnName="customertype" />
+                <ScalarProperty Name="comment" ColumnName="comment" />
+                <ScalarProperty Name="address" ColumnName="address" />
+                <ScalarProperty Name="website" ColumnName="website" />
+                <ScalarProperty Name="email" ColumnName="email" />
+                <ScalarProperty Name="mobile" ColumnName="mobile" />
+                <ScalarProperty Name="contactno" ColumnName="contactno" />
+                <ScalarProperty Name="companyname" ColumnName="companyname" />
+                <ScalarProperty Name="contactname" ColumnName="contactname" />
+                <ScalarProperty Name="idlead" ColumnName="idlead" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="leadactions">
+            <EntityTypeMapping TypeName="OsmosisCRMModel.leadaction">
+              <MappingFragment StoreEntitySet="leadaction">
+                <ScalarProperty Name="createdate" ColumnName="createdate" />
+                <ScalarProperty Name="nextdate" ColumnName="nextdate" />
+                <ScalarProperty Name="memo" ColumnName="memo" />
+                <ScalarProperty Name="actiontype" ColumnName="actiontype" />
+                <ScalarProperty Name="leadid" ColumnName="leadid" />
+                <ScalarProperty Name="leadactionid" ColumnName="leadactionid" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="cases">
+            <EntityTypeMapping TypeName="OsmosisCRMModel.case">
+              <MappingFragment StoreEntitySet="case">
+                <ScalarProperty Name="filtertext" ColumnName="filtertext" />
+                <ScalarProperty Name="castetext" ColumnName="castetext" />
+                <ScalarProperty Name="followup" ColumnName="followup" />
+                <ScalarProperty Name="completed" ColumnName="completed" />
+                <ScalarProperty Name="remarks" ColumnName="remarks" />
+                <ScalarProperty Name="suggest" ColumnName="suggest" />
+                <ScalarProperty Name="problem" ColumnName="problem" />
+                <ScalarProperty Name="time" ColumnName="time" />
+                <ScalarProperty Name="scheduledate" ColumnName="scheduledate" />
+                <ScalarProperty Name="filterpack" ColumnName="filterpack" />
+                <ScalarProperty Name="casetype" ColumnName="casetype" />
+                <ScalarProperty Name="machinecode" ColumnName="machinecode" />
+                <ScalarProperty Name="customercode" ColumnName="customercode" />
+                <ScalarProperty Name="caseid" ColumnName="caseid" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="machines">
+            <EntityTypeMapping TypeName="OsmosisCRMModel.machine">
+              <MappingFragment StoreEntitySet="machine">
+                <ScalarProperty Name="mac" ColumnName="mac" />
+                <ScalarProperty Name="machinemodel" ColumnName="machinemodel" />
+                <ScalarProperty Name="machinetype" ColumnName="machinetype" />
+                <ScalarProperty Name="photocode" ColumnName="photocode" />
+                <ScalarProperty Name="nextdate" ColumnName="nextdate" />
+                <ScalarProperty Name="installdate" ColumnName="installdate" />
+                <ScalarProperty Name="installedaddress" ColumnName="installedaddress" />
+                <ScalarProperty Name="customerindex" ColumnName="customerindex" />
+                <ScalarProperty Name="customercode" ColumnName="customercode" />
+                <ScalarProperty Name="machineid" ColumnName="machineid" />
+                <ScalarProperty Name="mid" ColumnName="mid" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="mainpacks">
+            <EntityTypeMapping TypeName="OsmosisCRMModel.mainpack">
+              <MappingFragment StoreEntitySet="mainpack">
+                <ScalarProperty Name="remarks" ColumnName="remarks" />
+                <ScalarProperty Name="machineid" ColumnName="machineid" />
+                <ScalarProperty Name="price" ColumnName="price" />
+                <ScalarProperty Name="end" ColumnName="end" />
+                <ScalarProperty Name="start" ColumnName="start" />
+                <ScalarProperty Name="havemain" ColumnName="havemain" />
+                <ScalarProperty Name="maincheck" ColumnName="maincheck" />
+                <ScalarProperty Name="customercode" ColumnName="customercode" />
+                <ScalarProperty Name="mainid" ColumnName="mainid" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

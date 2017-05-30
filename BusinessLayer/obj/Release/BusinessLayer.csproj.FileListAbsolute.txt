@@ -1,0 +1,12 @@
+D:\Vipul\WorkingProjects\Membership\Projects\OsmosisCRM\BusinessLayer\bin\Release\BusinessLayer.dll.config
+D:\Vipul\WorkingProjects\Membership\Projects\OsmosisCRM\BusinessLayer\bin\Release\BusinessLayer.dll
+D:\Vipul\WorkingProjects\Membership\Projects\OsmosisCRM\BusinessLayer\bin\Release\BusinessLayer.pdb
+D:\Vipul\WorkingProjects\Membership\Projects\OsmosisCRM\BusinessLayer\bin\Release\DataLayer.dll
+D:\Vipul\WorkingProjects\Membership\Projects\OsmosisCRM\BusinessLayer\bin\Release\EntityFramework.dll
+D:\Vipul\WorkingProjects\Membership\Projects\OsmosisCRM\BusinessLayer\bin\Release\EntityFramework.SqlServer.dll
+D:\Vipul\WorkingProjects\Membership\Projects\OsmosisCRM\BusinessLayer\bin\Release\DataLayer.pdb
+D:\Vipul\WorkingProjects\Membership\Projects\OsmosisCRM\BusinessLayer\bin\Release\EntityFramework.xml
+D:\Vipul\WorkingProjects\Membership\Projects\OsmosisCRM\BusinessLayer\bin\Release\EntityFramework.SqlServer.xml
+D:\Vipul\WorkingProjects\Membership\Projects\OsmosisCRM\BusinessLayer\obj\Release\BusinessLayer.csprojResolveAssemblyReference.cache
+D:\Vipul\WorkingProjects\Membership\Projects\OsmosisCRM\BusinessLayer\obj\Release\BusinessLayer.dll
+D:\Vipul\WorkingProjects\Membership\Projects\OsmosisCRM\BusinessLayer\obj\Release\BusinessLayer.pdb

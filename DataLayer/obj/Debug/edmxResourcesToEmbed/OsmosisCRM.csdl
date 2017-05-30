@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="OsmosisCRMModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="OsmosisCRMEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="customermains" EntityType="OsmosisCRMModel.customermain" />
+    <EntitySet Name="leads" EntityType="OsmosisCRMModel.lead" />
+    <EntitySet Name="leadactions" EntityType="OsmosisCRMModel.leadaction" />
+    <EntitySet Name="cases" EntityType="OsmosisCRMModel.case" />
+    <EntitySet Name="machines" EntityType="OsmosisCRMModel.machine" />
+    <EntitySet Name="mainpacks" EntityType="OsmosisCRMModel.mainpack" />
+  </EntityContainer>
+  <EntityType Name="customermain">
+    <Key>
+      <PropertyRef Name="cindex" />
+    </Key>
+    <Property Name="cindex" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="contactname" Type="String" Nullable="false" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="companyname" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="billingaddress" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="installaddress" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="machinetype" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="contactno" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="mobile" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="email" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="customer_type" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="payment_type" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="customercode" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="invitationcode" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="filterchangetime" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="filterchangelitre" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="joindate" Type="DateTime" Precision="3" />
+    <Property Name="source" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="comment" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="CustomerPassword" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="IsConfirm" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="lead">
+    <Key>
+      <PropertyRef Name="idlead" />
+    </Key>
+    <Property Name="idlead" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="contactname" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="companyname" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="contactno" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="mobile" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="email" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="website" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="address" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="comment" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="customertype" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="leaddate" Type="DateTime" Precision="3" />
+    <Property Name="model" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="status" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="leadaction">
+    <Key>
+      <PropertyRef Name="leadactionid" />
+    </Key>
+    <Property Name="leadactionid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="leadid" Type="Int32" />
+    <Property Name="actiontype" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="memo" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="nextdate" Type="DateTime" Precision="3" />
+    <Property Name="createdate" Type="DateTime" Precision="0" />
+  </EntityType>
+  <EntityType Name="case">
+    <Key>
+      <PropertyRef Name="caseid" />
+    </Key>
+    <Property Name="caseid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="customercode" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="machinecode" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="casetype" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="filterpack" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="scheduledate" Type="DateTime" Precision="3" />
+    <Property Name="time" Type="DateTime" Precision="3" />
+    <Property Name="problem" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="suggest" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="remarks" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="completed" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="followup" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="castetext" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="filtertext" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="machine">
+    <Key>
+      <PropertyRef Name="mid" />
+    </Key>
+    <Property Name="mid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="machineid" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="customercode" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="customerindex" Type="Int32" />
+    <Property Name="installedaddress" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="installdate" Type="DateTime" Precision="3" />
+    <Property Name="nextdate" Type="DateTime" Precision="3" />
+    <Property Name="photocode" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="machinetype" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="machinemodel" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="mac" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="mainpack">
+    <Key>
+      <PropertyRef Name="mainid" />
+    </Key>
+    <Property Name="mainid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="customercode" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="maincheck" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="havemain" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="start" Type="DateTime" Precision="3" />
+    <Property Name="end" Type="DateTime" Precision="3" />
+    <Property Name="price" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="machineid" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="remarks" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+  </EntityType>
+</Schema>

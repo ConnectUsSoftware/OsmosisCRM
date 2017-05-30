@@ -1,0 +1,247 @@
+﻿@{
+    ViewBag.Title = "LeadMaster";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div ng-controller="LeadCntrl" id="LeadCntrl">
+    <div class="row bg-title">
+        <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
+            <h4 class="page-title">Lead List</h4>
+        </div>
+    </div>
+    <div class="row">
+
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="divLead" ng-show="showAddLeadPanel">
+            <form class="form-horizontal ng-pristine ng-valid" name="fmLead" id="fmLead" novalidate enctype="multipart/form-data">
+                <div class="panel panel-info block4" style="position: static; zoom: 1;">
+                    <div class="panel-heading">
+                        Add/Edit Lead
+                        <div class="pull-right">
+                            <a href="#" data-perform="panel-collapse"><i class="ti-minus"></i></a>
+                        </div>
+                    </div>
+                    <div class="panel-wrapper collapse in" aria-expanded="true">
+                        <div class="panel-body">
+
+                            <div class="row">
+                                <div class="col-lg-6 form-group">
+                                    <label class="col-lg-4 control-label">Contact Name:</label>
+                                    <div class="col-lg-8" data-ng-class="{ 'has-error' : fmLead.contactname.$invalid && (fmLead.contactname.$dirty || Leadsubmitted)}">
+                                        <input id="contactname" name="contactname" ng-model="objLead.contactname" class="form-control" placeholder="Contact Name" type="text" ng-required="true">
+                                        <p ng-show="fmLead.contactname.$error.required && (fmLead.contactname.$dirty || Leadsubmitted)" class="help-block">Contact Name is required.</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6 form-group">
+                                    <label class="col-lg-4 control-label">Company Name:</label>
+                                    <div class="col-lg-8" data-ng-class="{ 'has-error' : fmLead.companyname.$invalid && (fmLead.companyname.$dirty || Leadsubmitted)}">
+                                        <input id="companyname" name="companyname" ng-model="objLead.companyname" class="form-control" placeholder="Company Name" type="text" ng-required="true">
+                                        <p ng-show="fmLead.companyname.$error.required && (fmLead.companyname.$dirty || Leadsubmitted)" class="help-block">Company Name is required.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-6 form-group">
+                                    <label class="col-lg-4 control-label">Contact No:</label>
+                                    <div class="col-lg-8" data-ng-class="{ 'has-error' : fmLead.contactno.$invalid && (fmLead.contactno.$dirty || Leadsubmitted)}">
+                                        <input id="contactno" name="contactno" ng-model="objLead.contactno" class="form-control" placeholder="contactno" type="text" ng-required="true">
+                                        <p ng-show="fmLead.contactno.$error.required && (fmLead.contactno.$dirty || Leadsubmitted)" class="help-block">Contact No is required.</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6 form-group">
+                                    <label class="col-lg-4 control-label">Mobile:</label>
+                                    <div class="col-lg-8" data-ng-class="{ 'has-error' : fmLead.mobile.$invalid && (fmLead.mobile.$dirty || Leadsubmitted)}">
+                                        <input id="mobile" name="mobile" ng-model="objLead.mobile" class="form-control" placeholder="mobile" type="text" ng-required="true">
+                                        <p ng-show="fmLead.mobile.$error.required && (fmLead.mobile.$dirty || Leadsubmitted)" class="help-block">Mobile is required.</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6 form-group">
+                                    <label class="col-lg-4 control-label">Email:</label>
+                                    <div class="col-lg-8" data-ng-class="{ 'has-error' : fmLead.email.$invalid && (fmLead.email.$dirty || Leadsubmitted)}">
+                                        <input id="email" name="email" ng-model="objLead.email" class="form-control" placeholder="email" type="email" ng-required="true">
+                                        <p ng-show="fmLead.email.$error.required && (fmLead.email.$dirty || Leadsubmitted)" class="help-block">Email is required.</p>
+                                        <p ng-show="fmLead.email.$error.email && (fmLead.email.$dirty || Contactsubmitted)" class="help-block">Please enter valid email id</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 form-group">
+                                    <label class="col-lg-4 control-label">Website:</label>
+                                    <div class="col-lg-8" data-ng-class="{ 'has-error' : fmLead.website.$invalid && (fmLead.website.$dirty || Leadsubmitted)}">
+                                        <input id="website" name="website" ng-model="objLead.website" class="form-control" placeholder="website" type="text" ng-required="true">
+                                        <p ng-show="fmLead.website.$error.required && (fmLead.website.$dirty || Leadsubmitted)" class="help-block">Website is required.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6 form-group">
+                                    <label class="col-lg-4 control-label">Address:</label>
+                                    <div class="col-lg-8" data-ng-class="{ 'has-error' : fmLead.address.$invalid && (fmLead.address.$dirty || Leadsubmitted)}">
+                                        <textarea id="address" name="address" ng-model="objLead.address" class="form-control" placeholder="Billing Address" type="text" ng-required="true"></textarea>
+                                        <p ng-show="fmLead.address.$error.required && (fmLead.address.$dirty || Leadsubmitted)" class="help-block">Address is required.</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6 form-group">
+                                    <label class="col-lg-4 control-label">Comment:</label>
+                                    <div class="col-lg-8" data-ng-class="{ 'has-error' : fmLead.comment.$invalid && (fmLead.comment.$dirty || Leadsubmitted)}">
+                                        <textarea id="comment" name="comment" ng-model="objLead.comment" class="form-control" placeholder="Comment" type="text" ng-required="true"></textarea>
+                                        <p ng-show="fmLead.comment.$error.required && (fmLead.comment.$dirty || Leadsubmitted)" class="help-block">Comment is required.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-6 form-group">
+                                    <label class="col-lg-4 control-label">Customer Type:</label>
+                                    <div class="col-lg-8" data-ng-class="{ 'has-error' : fmLead.customertype.$invalid && (fmLead.customertype.$dirty || Leadsubmitted)}">
+                                        <select id="customertype" name="customertype" ng-model="objLead.customertype" class="form-control" ng-required="true">
+                                            <option value="home">Home</option>
+                                            <option value="commerical">Commerical</option>
+                                        </select>
+                                        <p ng-show="fmLead.customertype.$error.required && (fmLead.customertype.$dirty || Leadsubmitted)" class="help-block">Customer Type is required.</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6 form-group">
+                                    <label class="col-lg-4 control-label">Lead Date:</label>
+                                    <div class="col-lg-8" data-ng-class="{ 'has-error' : fmLead.leaddate.$invalid && (fmLead.leaddate.$dirty || Leadsubmitted)}">
+                                        <div class="input-group date" data-provide="datepicker" data-date-autoclose="true" data-date-format="dd/mm/yyyy">
+                                            <input type="text" class="form-control" id="leaddate" name="leaddate" ng-model="objLead.leaddate" ng-required="true">
+                                            <div class="input-group-addon">
+                                                <span class="fa fa-calendar"></span>
+                                            </div>
+                                        </div>
+                                        <p ng-show="fmLead.leaddate.$error.required && (fmLead.leaddate.$dirty || Leadsubmitted)" class="help-block">Lead Date is required.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-6 form-group">
+                                    <label class="col-lg-4 control-label">Model:</label>
+                                    <div class="col-lg-8" data-ng-class="{ 'has-error' : fmLead.model.$invalid && (fmLead.model.$dirty || Leadsubmitted)}">
+                                        <input id="model" name="model" ng-model="objLead.model" class="form-control" placeholder="Model" type="text" ng-required="true">
+                                        <p ng-show="fmLead.model.$error.required && (fmLead.model.$dirty || Leadsubmitted)" class="help-block">Model is required.</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6 form-group">
+                                    <label class="col-lg-4 control-label">Status:</label>
+                                    <div class="col-lg-8" data-ng-class="{ 'has-error' : fmLead.status.$invalid && (fmLead.status.$dirty || Leadsubmitted)}">
+                                        <select id="status" name="status" ng-model="objLead.status" class="form-control" ng-required="true">
+                                            <option value="following ">Following </option>
+                                            <option value="no interest">No Interest</option>
+                                            <option value="problem have to solve">Problem have to solve</option>
+                                        </select>
+                                        <p ng-show="fmLead.status.$error.required && (fmLead.status.$dirty || Leadsubmitted)" class="help-block">Status is required.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-6 form-group">
+                                    <label class="col-lg-4 control-label">&nbsp;</label>
+                                    <div class="col-lg-8">
+                                        <button class="btn btn-labeled btn-success" type="button" ng-click="SaveLead(objLead)">
+                                            <span class="btn-label">
+                                                <em class="fa fa-floppy-o"></em>
+                                            </span>
+                                            Save
+                                        </button>
+                                        <button class="btn btn-labeled btn-info" type="button" ng-click="ClearLead()" href="javascript:void(0)">
+                                            <span class="btn-label">
+                                                <em class="fa fa-eraser"></em>
+                                            </span>
+                                            Reset
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+
+            <div class="row col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="panel panel-success">
+                    <div class="panel-heading">
+                        Lead Action
+                        <div class="pull-right"><a href="#" data-perform="panel-collapse"><i class="ti-minus"></i></a> <a href="#" data-perform="panel-dismiss"><i class="ti-close"></i></a> </div>
+                    </div>
+                    <div class="panel-wrapper collapse in" aria-expanded="true">
+                        <div class="panel-body">
+
+                            <table id="dtLeadActionList" class="display" cellspacing="0" width="100%">
+                                <thead>
+                                    <tr>
+                                        <th>Action </th>
+                                        <th>Next Date</th>
+                                        <th>Memo</th>
+                                    </tr>
+                                </thead>
+                                <tfoot>
+                                </tfoot>
+                            </table>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" ng-init="GetLeadList()">
+            <div class="panel panel-info block4" style="position: static; zoom: 1;">
+                <div class="panel-heading">
+                    Lead List
+                    <div class="pull-right">
+                        @*<a href="#" data-perform="panel-collapse"><i class="ti-minus"></i></a>*@
+                        <button type="button" ng-click="showAddLeadPanel=true;" class="btn btn-success">Add New </button>
+                    </div>
+                </div>
+                <div class="panel-wrapper collapse in" aria-expanded="true">
+                    <div class="panel-body">
+                        <table id="dtLeadList" class="display" cellspacing="0" width="100%">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Email Addresss</th>
+                                    <th>Mobile Number</th>
+                                    <th>Edit</th>
+                                    <th>Delete</th>
+                                </tr>
+                            </thead>
+                            <tfoot>
+                            </tfoot>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <hr>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+
+        //jQuery('.numbersOnly').keyup(function () {
+        //    this.value = this.value.replace(/[^0-9\.]/g, '');
+        //});
+
+        function EditLead(d) {
+            var scope = angular.element(document.getElementById("LeadCntrl")).scope();
+            scope.EditLead(d);
+        }
+
+        function DeleteLead(d) {
+            var scope = angular.element(document.getElementById("LeadCntrl")).scope();
+            scope.DeleteLead(d);
+        }
+
+    </script>
+</div>
+
+

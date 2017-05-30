@@ -1,0 +1,10 @@
+D:\Vipul\WorkingProjects\Membership\Projects\OsmosisCRM\DataLayer\bin\Debug\DataLayer.dll.config
+D:\Vipul\WorkingProjects\Membership\Projects\OsmosisCRM\DataLayer\bin\Debug\DataLayer.dll
+D:\Vipul\WorkingProjects\Membership\Projects\OsmosisCRM\DataLayer\bin\Debug\DataLayer.pdb
+D:\Vipul\WorkingProjects\Membership\Projects\OsmosisCRM\DataLayer\bin\Debug\EntityFramework.dll
+D:\Vipul\WorkingProjects\Membership\Projects\OsmosisCRM\DataLayer\bin\Debug\EntityFramework.SqlServer.dll
+D:\Vipul\WorkingProjects\Membership\Projects\OsmosisCRM\DataLayer\bin\Debug\EntityFramework.xml
+D:\Vipul\WorkingProjects\Membership\Projects\OsmosisCRM\DataLayer\bin\Debug\EntityFramework.SqlServer.xml
+D:\Vipul\WorkingProjects\Membership\Projects\OsmosisCRM\DataLayer\obj\Debug\DataLayer.csprojResolveAssemblyReference.cache
+D:\Vipul\WorkingProjects\Membership\Projects\OsmosisCRM\DataLayer\obj\Debug\DataLayer.dll
+D:\Vipul\WorkingProjects\Membership\Projects\OsmosisCRM\DataLayer\obj\Debug\DataLayer.pdb
