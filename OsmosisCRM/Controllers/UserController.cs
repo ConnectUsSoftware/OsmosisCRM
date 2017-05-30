@@ -15,9 +15,6 @@ namespace OsmosisCRM.Controllers
         private readonly UserBll _UserBll;
 
 
-        /// <summary>
-        /// /testtesttest
-        /// </summary>
         public UserController()
         {
             _UserBll = new UserBll(new DataLayer.OsmosisCRMEntities());
