@@ -71,8 +71,6 @@
             });
     }
 
-
-
     var date = new Date();
     var month = date.getMonth() + 1;
     var jd = date.getDate() + "/" + (month.length > 1 ? month : "0" + month) + "/" + date.getFullYear();
@@ -102,6 +100,7 @@
 
             UserService.AddUser(obj).then(
                function successCallback(result) {
+                   debugger;
                    swal.close();
 
                    if (result.data.status == -1) {
@@ -252,6 +251,36 @@
 
     }
 
+    $scope.GetCurrentUser = function () {
+        swal({
+            title: "Please Wait...",
+            text: "We are processing your request",
+            showCancelButton: false,
+            confirmButtonText: 'Submit',
+            showLoaderOnConfirm: true,
+            allowOutsideClick: false,
+        });
+        swal.showLoading(); swal.enableLoading();
+
+        UserService.GetEditUserOnId().then(
+            function successCallback(result) {
+                swal.close();
+
+                if (result.data.status == 1) {
+                    $scope.objUser = result.data.UserList;
+
+                    var date = new Date(result.data.UserList.joindate);
+                    var month = date.getMonth() + 1;
+                    $scope.objUser.joindate = date.getDate() + "/" + (month.length > 1 ? month : "0" + month) + "/" + date.getFullYear();
+                }
+                else {
+
+                }
+
+            }, function errorCallback(response) {
+            });
+    }
+
 
     function getParameterByName(name) {
         var url = window.location.href;
@@ -295,6 +324,58 @@
                 }, function errorCallback(response) {
                 });
         }
+    }
+
+    $scope.UpdateUser = function (obj) {
+        $scope.Usersubmitted = true;
+
+        if ($scope.frmUser.$valid) {
+            swal({
+                title: "Please Wait...",
+                text: "We are processing your request",
+                showCancelButton: false,
+                confirmButtonText: 'Submit',
+                showLoaderOnConfirm: true,
+                allowOutsideClick: false,
+            });
+            swal.showLoading(); swal.enableLoading();
+
+            var d = new Date(obj.joindate.split("/").reverse().join("-"));
+            var dd = d.getDate();
+            var mm = d.getMonth() + 1;
+            var yy = d.getFullYear();
+
+            //var fdt = new Date(from[2], from[1], from[0]);
+            obj.joindate = yy + "/" + mm + "/" + dd
+
+            UserService.UpdateUser(obj).then(
+               function successCallback(result) {
+                   swal.close();
+
+                   if (result.data.status == -1) {
+                       swal('', 'Customer code already exist with same name.', 'info');
+                       return;
+                   }
+                   else if (result.data.status) {
+                       swal('', 'User Profile update successfully.', 'success');
+                   }
+                   else {
+                       if (obj.cindex == 0)
+                           swal('', 'User details not add successfully.', 'error');
+                       else
+                           swal('', 'User details not update successfully.', 'error');
+                   }
+
+               }, function errorCallback(response) {
+                   
+               });
+
+        }
+        else {
+            return false;
+        }
+
+        return false;
     }
 
 }

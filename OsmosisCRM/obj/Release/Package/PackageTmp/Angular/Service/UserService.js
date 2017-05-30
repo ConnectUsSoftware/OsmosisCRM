@@ -42,6 +42,24 @@
         });
     };
 
+
+    list.GetEditUserOnId = function () {
+        return $http({
+            method: "GET",
+            url: "/api/UserDashboard/GetUserOnId",
+            contentType: "application/json"
+        });
+    };
+
+    list.UpdateUser = function (data) {
+        return $http({
+            method: "POST",
+            url: "/api/UserDashboard/UpdateUser",
+            data: data,
+            contentType: "application/json"
+        });
+    };
+
     return list;
 
 }]);

@@ -151,6 +151,9 @@
                         <a href="/Admin/machineMaster" class="waves-effect"><i class="ti-desktop fa-fw"></i> <span class="hide-menu">Machine List </span></a>
                     </li>
                     <li>
+                        <a href="/Admin/maintenance" class="waves-effect"><i class="ti-layout-slider-alt fa-fw"></i> <span class="hide-menu">Maintenance List </span></a>
+                    </li>
+                    <li>
                         <a href="javascript:document.getElementById('logoutForm').submit()" class="waves-effect"><i class="fa-fw" style="margin-right:0px;">L</i> <span class="hide-menu"> Log off</span></a>
                     </li>
                 </ul>
@@ -243,7 +246,7 @@
     <script src="/plugins/bower_components/datatables/plugins/bootstrap/datatables.bootstrap.js" type="text/javascript"></script>
     <script src="/plugins/bower_components/datatables/dataTables.responsive.min.js"></script>
     <script src="/plugins/bower_components/datepicker/moment.js"></script>
-    
+
 
     <script src="/plugins/bower_components/sweetalert/sweetalert2.min.js"></script>
     <link href="/plugins/bower_components/sweetalert/sweetalert2.min.css" rel="stylesheet" />
@@ -251,17 +254,18 @@
     <!-- Include a polyfill for ES6 Promises (optional) for IE11 and Android browser -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/core-js/2.4.1/core.js"></script>
 
-
     <script src="/Angular/Controller/UserCntrl.js"></script>
     <script src="/Angular/Controller/LeadCntrl.js"></script>
     <script src="/Angular/Controller/LeadActionCntrl.js"></script>
     <script src="/Angular/Controller/CaseCntrl.js"></script>
     <script src="/Angular/Controller/MachineCntrl.js"></script>
+    <script src="/Angular/Controller/MaintenanceCntrl.js"></script>
 
     <script src="/Angular/Service/UserService.js"></script>
     <script src="/Angular/Service/LeadService.js"></script>
     <script src="/Angular/Service/CaseService.js"></script>
     <script src="/Angular/Service/MachineService.js"></script>
+    <script src="/Angular/Service/MaintenanceService.js"></script>
 
 
     @*@Scripts.Render("~/bundles/jquery")

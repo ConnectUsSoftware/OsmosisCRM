@@ -10,13 +10,13 @@ by editing this MSBuild file. In order to learn more about this please visit htt
   </PropertyGroup>
   <ItemGroup>
     <File Include="Angular/Controller/CaseCntrl.js">
-      <publishTime>05/27/2017 14:37:05</publishTime>
+      <publishTime>05/30/2017 17:51:49</publishTime>
     </File>
     <File Include="Angular/Controller/LeadActionCntrl.js">
       <publishTime>05/27/2017 17:58:28</publishTime>
     </File>
     <File Include="Angular/Controller/LeadCntrl.js">
-      <publishTime>05/27/2017 17:56:56</publishTime>
+      <publishTime>05/30/2017 17:34:43</publishTime>
     </File>
     <File Include="Angular/Controller/LoginCntrl.js">
       <publishTime>05/27/2017 16:17:15</publishTime>
@@ -25,13 +25,16 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>05/27/2017 14:15:12</publishTime>
     </File>
     <File Include="Angular/Controller/MaintenanceCntrl.js">
-      <publishTime>05/27/2017 18:35:52</publishTime>
+      <publishTime>05/29/2017 17:19:56</publishTime>
+    </File>
+    <File Include="Angular/Controller/UsageSummaryCntrl.js">
+      <publishTime>05/30/2017 20:08:09</publishTime>
     </File>
     <File Include="Angular/Controller/UserCntrl.js">
-      <publishTime>05/27/2017 17:21:14</publishTime>
+      <publishTime>05/30/2017 19:50:39</publishTime>
     </File>
     <File Include="Angular/Module/app.js">
-      <publishTime>05/24/2017 10:37:23</publishTime>
+      <publishTime>05/29/2017 16:11:33</publishTime>
     </File>
     <File Include="Angular/Service/CaseService.js">
       <publishTime>05/27/2017 14:32:36</publishTime>
@@ -46,10 +49,13 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>05/27/2017 14:02:58</publishTime>
     </File>
     <File Include="Angular/Service/MaintenanceService.js">
-      <publishTime>05/27/2017 14:42:41</publishTime>
+      <publishTime>05/30/2017 12:15:51</publishTime>
+    </File>
+    <File Include="Angular/Service/UsageSummaryService.js">
+      <publishTime>05/30/2017 18:43:33</publishTime>
     </File>
     <File Include="Angular/Service/UserService.js">
-      <publishTime>05/27/2017 17:21:29</publishTime>
+      <publishTime>05/30/2017 19:48:59</publishTime>
     </File>
     <File Include="Areas/HelpPage/HelpPage.css">
       <publishTime>05/23/2017 16:26:38</publishTime>
@@ -94,10 +100,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>05/23/2017 16:26:39</publishTime>
     </File>
     <File Include="bin/BusinessLayer.dll">
-      <publishTime>05/27/2017 18:42:49</publishTime>
+      <publishTime>05/30/2017 19:30:55</publishTime>
     </File>
     <File Include="bin/DataLayer.dll">
-      <publishTime>05/27/2017 18:42:49</publishTime>
+      <publishTime>05/30/2017 19:30:54</publishTime>
     </File>
     <File Include="bin/de/Microsoft.Data.Edm.resources.dll">
       <publishTime>05/23/2017 16:26:36</publishTime>
@@ -199,7 +205,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>05/23/2017 16:26:32</publishTime>
     </File>
     <File Include="bin/OsmosisCRM.dll">
-      <publishTime>05/27/2017 18:42:50</publishTime>
+      <publishTime>05/30/2017 20:08:40</publishTime>
     </File>
     <File Include="bin/Owin.dll">
       <publishTime>05/23/2017 18:01:59</publishTime>
@@ -760,7 +766,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>05/23/2017 16:58:28</publishTime>
     </File>
     <File Include="EmailTemplate/ConfirmUser.html">
-      <publishTime>05/26/2017 17:47:07</publishTime>
+      <publishTime>05/27/2017 19:10:14</publishTime>
     </File>
     <File Include="EmailTemplate/subscriptionLink.html">
       <publishTime>05/27/2017 16:29:28</publishTime>
@@ -1539,6 +1545,18 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="plugins/bower_components/jquery/jquery.min.js">
       <publishTime>05/23/2017 16:33:53</publishTime>
     </File>
+    <File Include="plugins/bower_components/morrisjs/morris-data.js">
+      <publishTime>05/30/2017 17:23:27</publishTime>
+    </File>
+    <File Include="plugins/bower_components/morrisjs/morris.css">
+      <publishTime>05/30/2017 12:56:40</publishTime>
+    </File>
+    <File Include="plugins/bower_components/morrisjs/morris.js">
+      <publishTime>05/30/2017 12:50:41</publishTime>
+    </File>
+    <File Include="plugins/bower_components/raphael/raphael-min.js">
+      <publishTime>05/30/2017 12:50:18</publishTime>
+    </File>
     <File Include="plugins/bower_components/sidebar-nav/sidebar-nav.min.js">
       <publishTime>05/23/2017 16:37:02</publishTime>
     </File>
@@ -1771,13 +1789,13 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>05/27/2017 16:15:39</publishTime>
     </File>
     <File Include="Views/Account/Register.cshtml">
-      <publishTime>05/27/2017 16:15:44</publishTime>
+      <publishTime>05/29/2017 10:55:24</publishTime>
     </File>
     <File Include="Views/Admin/CaseMaster.cshtml">
-      <publishTime>05/27/2017 14:43:33</publishTime>
+      <publishTime>05/30/2017 18:43:31</publishTime>
     </File>
     <File Include="Views/Admin/EditUser.cshtml">
-      <publishTime>05/27/2017 17:22:19</publishTime>
+      <publishTime>05/30/2017 19:11:56</publishTime>
     </File>
     <File Include="Views/Admin/Index.cshtml">
       <publishTime>05/26/2017 17:37:34</publishTime>
@@ -1792,13 +1810,19 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>05/27/2017 14:02:57</publishTime>
     </File>
     <File Include="Views/Admin/maintenance.cshtml">
-      <publishTime>05/27/2017 18:37:36</publishTime>
+      <publishTime>05/30/2017 12:36:15</publishTime>
     </File>
     <File Include="Views/Admin/UserMaster.cshtml">
       <publishTime>05/27/2017 17:20:12</publishTime>
     </File>
     <File Include="Views/AdminUser/Index.cshtml">
-      <publishTime>05/25/2017 11:33:44</publishTime>
+      <publishTime>05/30/2017 13:37:02</publishTime>
+    </File>
+    <File Include="Views/AdminUser/Usage.cshtml">
+      <publishTime>05/30/2017 20:07:22</publishTime>
+    </File>
+    <File Include="Views/AdminUser/UserProfile.cshtml">
+      <publishTime>05/30/2017 19:53:39</publishTime>
     </File>
     <File Include="Views/Home/Index.cshtml">
       <publishTime>05/23/2017 17:46:04</publishTime>
@@ -1810,10 +1834,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>05/23/2017 16:26:25</publishTime>
     </File>
     <File Include="Views/Shared/_Layout.cshtml">
-      <publishTime>05/27/2017 16:49:17</publishTime>
+      <publishTime>05/30/2017 17:35:44</publishTime>
     </File>
     <File Include="Views/Shared/_UserLayout.cshtml">
-      <publishTime>05/26/2017 17:36:46</publishTime>
+      <publishTime>05/30/2017 19:11:53</publishTime>
     </File>
     <File Include="Views/Web.config">
       <publishTime>05/23/2017 16:26:25</publishTime>
@@ -1822,7 +1846,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>05/23/2017 16:26:25</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>05/27/2017 18:42:57</publishTime>
+      <publishTime>05/30/2017 20:03:23</publishTime>
     </File>
   </ItemGroup>
 </Project>

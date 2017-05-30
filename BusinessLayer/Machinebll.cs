@@ -44,12 +44,10 @@ namespace BusinessLayer
             return _context.machines.ToList();
         }
 
-
         public machine GetMachineOncustomercode(string customerCode)
         {
             return _context.machines.Where(c => c.customercode == customerCode).SingleOrDefault();
         }
-
 
         public bool DeleteMachine(int mid)
         {

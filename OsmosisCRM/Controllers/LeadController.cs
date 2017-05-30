@@ -31,8 +31,8 @@ namespace OsmosisCRM.Controllers
         {
             try
             {
-                //string strCurrentUserId = User.Identity.GetUserId();
-                //ApplicationUser user = System.Web.HttpContext.Current.GetOwinContext().GetUserManager<ApplicationUserManager>().FindById(System.Web.HttpContext.Current.User.Identity.GetUserId());
+                string strCurrentUserId = User.Identity.GetUserId();
+                ApplicationUser user = System.Web.HttpContext.Current.GetOwinContext().GetUserManager<ApplicationUserManager>().FindById(System.Web.HttpContext.Current.User.Identity.GetUserId());
 
                 return new { status = 1, LeadList = _LeadBll.GetLeadList() };
             }

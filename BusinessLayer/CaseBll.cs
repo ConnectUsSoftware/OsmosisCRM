@@ -44,6 +44,11 @@ namespace BusinessLayer
             return _context.cases.ToList();
         }
 
+        public IEnumerable<dynamic> GetCaseList(string CustomerCode)
+        {
+            return _context.cases.Where(c => c.customercode == CustomerCode).ToList();
+        }
+
         public bool DeleteCase(int caseid)
         {
             var objCase = new @case { caseid = caseid };

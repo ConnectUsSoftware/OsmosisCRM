@@ -38,10 +38,11 @@ namespace OsmosisCRM.Controllers
 
         public ActionResult Usage()
         {
-            
+            return View();
+        }
 
-
-
+        public ActionResult UserProfile()
+        {
             return View();
         }
     }

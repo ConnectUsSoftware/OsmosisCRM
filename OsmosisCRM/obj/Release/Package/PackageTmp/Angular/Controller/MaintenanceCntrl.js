@@ -20,21 +20,48 @@
 
                 if (result.data.status == 1) {
                     var table = $('#dtMaintenanceList').DataTable({
-                        "aaData": result.data.Caselist,
+                        "aaData": result.data.MaintenanceList,
                         "aoColumns": [
                             { "data": "customercode" },
-                            { "data": "maincheck" },
                             { "data": "machineid" },
+                            {
+                                "data": "start",
+                                "mRender": function (data, type, full) {
+                                    var d = new Date(data.split("/").reverse().join("-"));
+                                    var dd = d.getDate();
+                                    var mm = d.getMonth() + 1;
+                                    var yy = d.getFullYear();
+
+                                    mm = (mm.toString().length > 1 ? mm : "0" + mm)
+                                    dd = (dd.toString().length > 1 ? dd : "0" + dd)
+
+                                    return dd + "/" + mm + "/" + yy
+                                }
+                            },
+                            {
+                                "data": "end",
+                                "mRender": function (data, type, full) {
+                                    var d = new Date(data.split("/").reverse().join("-"));
+                                    var dd = d.getDate();
+                                    var mm = d.getMonth() + 1;
+                                    var yy = d.getFullYear();
+
+                                    mm = (mm.toString().length > 1 ? mm : "0" + mm)
+                                    dd = (dd.toString().length > 1 ? dd : "0" + dd)
+
+                                    return dd + "/" + mm + "/" + yy
+                                }
+                            },
                             {
                                 "data": "mainid",
                                 "mRender": function (data, type, full) {
-                                    return "<a class='btn btn-outline btn-circle btn-sm purple' href='javascript:void(0)' onclick='EditCase (" + JSON.stringify(full) + ")' ><i class='fa fa-edit'></i> Edit </a>";
+                                    return "<a class='btn btn-outline btn-circle btn-sm purple' href='javascript:void(0)' onclick='EditMaintenance(" + JSON.stringify(full) + ")' ><i class='fa fa-edit'></i> Edit </a>";
                                 }
                             },
                             {
                                 "data": "mainid",
                                 "render": function (data, type, row) {
-                                    return "<a class='btn btn-outline btn-circle btn-sm purple' href='javascript:void(0)' onclick='DeleteCase(" + data + ")' ><i class='fa fa-trash-o'></i> Delete </a>";
+                                    return "<a class='btn btn-outline btn-circle btn-sm purple' href='javascript:void(0)' onclick='DeleteMaintenance(" + data + ")' ><i class='fa fa-trash-o'></i> Delete </a>";
                                 }
                             }
                         ]

@@ -1,3 +1,0 @@
-D:\Vipul\WorkingProjects\Membership\Projects\OsmosisCRM\OsmosisCRM\obj\Debug\OsmosisCRM.csprojResolveAssemblyReference.cache
-D:\Vipul\WorkingProjects\Membership\Projects\OsmosisCRM\OsmosisCRM\obj\Debug\OsmosisCRM.Migrations.cindex.resources
-D:\Vipul\WorkingProjects\Membership\Projects\OsmosisCRM\OsmosisCRM\obj\Debug\OsmosisCRM.csproj.GenerateResource.Cache
